@@ -4,8 +4,8 @@ Professor Fox
 October 9, 2020
 Final Project Planning
 
-Team
-Currently, I do not have a team for the final project. I tried using the, “Search for Teammates!” forum within Piazza, but it does not look 
+Team Currently 
+I do not have a team for the final project. I tried using the, “Search for Teammates!” forum within Piazza, but it does not look 
 like other people are searching for teammates. I could be wrong and maybe I am not looking in the right place to find teammates, but for now, 
 I will be working on this project alone. Within the, “Search for Teammates!” forum I added a post about myself and contact information. 
 If someone does contact me, I will try to form a team because I would rather work on the final project as a team rather than individually. 

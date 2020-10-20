@@ -16,7 +16,8 @@ I am confident I can use any of these data sets, however; the one I am intereste
 The reason why I am interested in this the most is because Youtube is the figurehead for video content and is one of the most visited websites 
 throughout the world. By using the extensive Youtube data set, I hope this project will be meaningful and I will learn more about data analysis. 
 Some ideas I have for this project are finding characteristics for what makes a trending video, what factors into how popular a Youtube video will be,
-or statistical findings. The Netflix data set I was looking into appears to be interesting and is a data set I would use for my final project. 
+or statistical findings. If I am able to another idea I have is to create a model that can predict if a video will trend on Youtube. The Netflix data set I 
+was looking into appears to be interesting and is a data set I would use for my final project. 
 Several topics I am interested in this data set are analysis of actors/directors across movies/series and the reasoning behind Netflix’s preference 
 for movies over tv series. The New York City Airbnb data set is the last data set I am interested in focusing my project around. Various ideas I 
 have for topics are predicting prices or locations for Airbnb or analysis determining why some areas are busier than others. To clarify confusion, 

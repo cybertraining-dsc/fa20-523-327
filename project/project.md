@@ -4,6 +4,8 @@
 - [ ] please add refernces
 - [ ] please add title
 - [ ] please learn proper markdown, for example http links are wrong with out greater equal
+- [ ] please remove your efforts on seraching a team mate
+- [ ] please do not use I
 
 Adam Chai INFO-I423 Professor Fox October 9, 2020 Final Project Planning
 

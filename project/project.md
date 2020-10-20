@@ -1,3 +1,10 @@
+# TBD
+
+- [ ] please use our template
+- [ ] please add refernces
+- [ ] please add title
+- [ ] please learn proper markdown, for example http links are wrong with out greater equal
+
 Adam Chai INFO-I423 Professor Fox October 9, 2020 Final Project Planning
 
 Team Currently I do not have a team for the final project. I tried using the, “Search for Teammates!” forum within Piazza, 

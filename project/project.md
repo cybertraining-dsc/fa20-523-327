@@ -37,7 +37,10 @@ Predictive Model - undertermined, need to visit office hours, look into model ag
 
 ## 5. References
 [^1]: Google Staff, Trending on Youtube, Google. <https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.>
+
 [^2]: Aslam. Salman, Youtube by the Numbers: Stats, Demographics & Fun Facts, Omnicore. <https://www.omnicoreagency.com/youtube-statistics/#:~:text=Annual%20cost%20to%20run%20YouTube,grows%20by%2040%25%20every%20year.>
+
 [^3]: Jolly. Mitchell, Trending YouTube Video Statistics, Kaggle. <https://www.kaggle.com/datasnaek/youtube-new >
+
 [^4]: Google Research Team, Youtube8m, Research Google. <http://research.google.com/youtube8m/index.html>
 

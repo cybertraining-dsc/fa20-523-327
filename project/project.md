@@ -1,42 +1,43 @@
-# TBD
+# Trending Youtube Videos Analysis
+* Adam Chai, fa20-523-327
+* [Edit](https://github.com/cybertraining-dsc/fa20-523-327/blob/master/project/project.md)
 
-- [ ] please use our template
-- [ ] please add refernces
-- [ ] please add title
-- [ ] please learn proper markdown, for example http links are wrong with out greater equal
-- [ ] please remove your efforts on seraching a team mate
-- [ ] please do not use I
+{{% pageinfo %}}
 
-Adam Chai INFO-I423 Professor Fox October 9, 2020 Final Project Planning
+## Abstract
 
-Team Currently I do not have a team for the final project. I tried using the, “Search for Teammates!” forum within Piazza, 
-but it does not look like other people are searching for teammates. I could be wrong and maybe I am not looking in the right place to find teammates, 
-but for now, I will be working on this project alone. Within the, “Search for Teammates!” forum I added a post about myself and contact information. 
-If someone does contact me, I will try to form a team because I would rather work on the final project as a team rather than individually.
+need to add abstract
 
-Topic/Dataset After looking through various data sets, I have determined the scope of my final project will be within the realm of finding unique 
-insights/analysis within the data sets. These are the data sets I would want to work on for my final project:
+Contents
 
-https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data 
-https://www.kaggle.com/datasnaek/youtube-new 
-https://www.kaggle.com/shivamb/netflix-shows
+{{< table_of_contents >}}
 
-I am confident I can use any of these data sets, however; the one I am interested in the most is the Trending Youtube Video Statistics data set. 
-The reason why I am interested in this the most is because Youtube is the figurehead for video content and is one of the most visited websites 
-throughout the world. By using the extensive Youtube data set, I hope this project will be meaningful and I will learn more about data analysis. 
-Some ideas I have for this project are finding characteristics for what makes a trending video, what factors into how popular a Youtube video will be,
-or statistical findings. If I am able to another idea I have is to create a model that can predict if a video will trend on Youtube. The Netflix data set I 
-was looking into appears to be interesting and is a data set I would use for my final project. 
-Several topics I am interested in this data set are analysis of actors/directors across movies/series and the reasoning behind Netflix’s preference 
-for movies over tv series. The New York City Airbnb data set is the last data set I am interested in focusing my project around. Various ideas I 
-have for topics are predicting prices or locations for Airbnb or analysis determining why some areas are busier than others. To clarify confusion, 
-I want to base my final project off the Youtube data set followed by Netflix then NYC Airbnbs.
+{{% /pageinfo %}}
 
-What needs to be done to get a great grade To get a great grade in this assignment, or within any assignment, what needs to be done in preparation, 
-asking for help, and working on the assignment as soon as possible. Preparing the assignment means going through what needs to be tackled first and 
-completed to go on the next step. This also means I should lay out the steps and quantify how long it will take to go through each step. Arguably, 
-the most important method of receiving a great grade is asking instructors for help. Instructors’ jobs are to help students and if I become stuck on 
-a step, I cannot continue completing the project until the step is over. Whenever I need help, I will reach out to the instructors of this class promptly.
-Finally, the final project needs to be started early, because there are many obstacles and learning curves, I cannot estimate correctly so I can 
-finish in time. To prevent a late assignment starting early or right now will prevent me from losing points. By following these steps, I should be 
-able to produce a high-quality assignment for this class.
+**Keywords:** youtube, videos, trending
+
+
+## 1. Introduction
+
+The final project for this class will be focused on trending Youtube videos. Specifically, this project will be using a trending Youtube videos dataset (US only), and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience whom find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, but there is no concrete proof or findings that can validate these thoughts. Additionally, Youtube content creators are constantly evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos that can appeal to a wide audience is difficult. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.
+
+## 2. Objective
+
+The objective of this project is to develop a model to predict if a Youtube video will trend. Content creators, companies, or even one time users aim for their videos to reach the trending section on Youtube. Only 50 videos a day can reach the trending section on Youtube so it makes it very unlikely even a good video will reach the section. As stated earlier, the purpose of the trending section is to attract a wide range of audience but what if there is an easier way for a video to reach the section. For my model to predict if a video will trend I will be training my model on the trending youtube videos and after will be applied to all youtube videos. While training my model I will be constantly evaluating the validity of its findings and the accuracy. If this model is successful it can be used to increase the chances a video will trend on Youtube. 
+
+## 3. Dataset
+To understand what determines if a video will trend on Youtube the datasets chosen for this project are a trending Youtube videos (US) and a dataset of public Youtube videos. 
+
+The model being built for this project will try to find commonalities within the trending youtube videos dataset. Some examples of commonalities this model can find are keywords within the title of videos, popular tags, likes:dislikes ratios, etc. This model will find the importance of what determines if a video will trend on Youtube. By understanding the ranking of importance of what makes or breaks a video to trend will allow the model to accurately assess the probability the video will trend. 
+Afterwards, a confident model is built wihtin the trending dataset it will be applied onto the data set of public Youtube videos and will be evaluate how accurate the model is at predicting a trending Youtube video. To test if this works the datasets can be compared to find which video trended and if the dataset was able to predict the trending videos on the public videos dataset then it will be successful. 
+
+## 4. Work Breakdown
+Initial Project Report - completed
+Predictive Model - undertermined, need to visit office hours, look into model again
+
+## 5. References
+[^1]: Google Staff, Trending on Youtube, Google. <https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.>
+[^2]: Aslam. Salman, Youtube by the Numbers: Stats, Demographics & Fun Facts, Omnicore. <https://www.omnicoreagency.com/youtube-statistics/#:~:text=Annual%20cost%20to%20run%20YouTube,grows%20by%2040%25%20every%20year.>
+[^3]: Jolly. Mitchell, Trending YouTube Video Statistics, Kaggle. <https://www.kaggle.com/datasnaek/youtube-new >
+[^4]: Google Research Team, Youtube8m, Research Google. <http://research.google.com/youtube8m/index.html>
+

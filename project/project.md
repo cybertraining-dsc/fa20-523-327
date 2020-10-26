@@ -14,7 +14,7 @@ Contents
 
 {{% /pageinfo %}}
 
-**Keywords:** youtube, videos, trending
+**Keywords:** youtube, videos, trending, popular
 
 
 ## 1. Introduction
@@ -33,22 +33,40 @@ Ideally, are suprising or novel
 
 but these criterians Youtube has set are not defined[1]. Meaning, the determinants for how a Youtube video trends are not clearly defined. Youtube content creators are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos that can appeal to a wide audience is difficult. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.
 
-## 2. Objective
+## 2. Background Research and Previous Work
 
-The objective of this project is to develop a model to predict if a Youtube video will trend. Content creators, companies, or even one time users aim for their videos to reach the trending section on Youtube. When counting the amount of videos that are on the trending section one can easily see there are only 50 videos a day that will reach it. Even if a video is popular it is still incredibly difficult for the video to reach the trending section. As stated earlier, the purpose of the trending section is to attract a wide range of audience but what if there is an easier way for a video to reach the section. For my model to predict if a video will trend I will be training my model on the trending youtube videos and after will be applied to all youtube videos. While training my model I will be constantly evaluating the validity of its findings and the accuracy. If this model is successful it can be used to increase the chances a video will trend on Youtube. 
+After reviewing other background literature and works from other authors witin this field, most people have not really ventured into how a video will trend on Youtube. Most findings online are analysis or unique findings of popular videos. Several people have done research to predict if a video will be popular on Youtube but do not cover the scope if it will trend on Youtube. These findings can still be helpful and lead this research into the right direction, however; the analysis done for this project will be new.
 
-## 3. Dataset
+## 3. Choice of Data-sets
 To understand what determines if a video will trend on Youtube the datasets chosen for this project are a trending Youtube videos (US) and a dataset of public Youtube videos[2][3]. 
 
 The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used a multi-classifier with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
 
 Afterwards, the model is built wihtin the trending dataset it will be applied onto the data set of public Youtube videos and will be evaluate how accurate the model is at predicting a trending Youtube video. To test if this works the datasets can be compared to find which video trended and if the dataset was able to predict the trending videos on the public videos dataset then it will be successful. 
 
-## 4. Work Breakdown
-Initial Project Report - completed
-Predictive Model - undertermined, need to visit office hours, look into model again
+## 4. Methodology
 
-## 5. References
+### 4.1. Hardware Component
+
+This section will be addressed once I go to office hours
+
+### 4.2 Software Component
+
+This section will be addressed once I go to office hours
+
+## 5. Inference
+
+This section will be addressed upon completion
+
+## 6. Conclusion
+
+This section will be addressed upon completion
+
+## 7. Acknowledgments 
+
+Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the *FA20-BL-ENGR-E534-11530: Big Data Applications* course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
+
+## 8. References
 [^1]: Google Staff, Trending on Youtube, Google. <https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.>
 
 [^2]: Jolly. Mitchell, Trending YouTube Video Statistics, Kaggle. <https://www.kaggle.com/datasnaek/youtube-new >

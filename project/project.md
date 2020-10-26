@@ -22,9 +22,13 @@ Contents
 The final project for this class will be focused on trending Youtube videos. Specifically, this project will be using a trending Youtube videos dataset (US only), and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience whom find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, and the Google Staff has hinted what will make a video trend,
 
 Are appealing to a wide range of viewers
+
 Are not misleading, cickbaity, or sensational
+
 Capture the breadth of what's happening on YouTube and in the world
+
 Showcase a diversity of creators 
+
 Ideally, are suprising or novel
 
 but these criterians Youtube has set are not defined[1]. Meaning, the determinants for how a Youtube video trends are not clearly defined. Youtube content creators are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos that can appeal to a wide audience is difficult. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.

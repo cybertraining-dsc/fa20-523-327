@@ -71,7 +71,7 @@ Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and th
 
 [^2]: Jolly. Mitchell, Trending YouTube Video Statistics, Kaggle. <https://www.kaggle.com/datasnaek/youtube-new >
 
-[^3]: Google Research Team, Youtube8m, Research Google. <http://research.google.com/youtube8m/index.html>
+[^3]: Jain, Guarav, Youtube Scrapped Data, Kaggle. <https://www.kaggle.com/gaurav2022/youtube-scrapped-data>
 
 [^4]: Li. Yuping, Eng. Kent, Zhang. Liqian, YouTube Videos Prediction: Will this video be popular?, Stanford <http://cs229.stanford.edu/proj2019aut/data/assignment_308832_raw/26647615.pdf>
 

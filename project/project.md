@@ -31,16 +31,16 @@ Showcase a diversity of creators
 
 Ideally, are suprising or novel
 
-but these criterians Youtube has set are not defined[1]. Meaning, the determinants for how a Youtube video trends are not clearly defined. Youtube content creators are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos that can appeal to a wide audience is difficult. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.
+but these criterians Youtube has set are not defined[1]. Meaning, the determinants for how a Youtube video will trend will not be given out and it is up for Youtube content creators to find this out themselves. Youtube content creators are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos that can appeal to a wide audience is difficult. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.
 
 ## 2. Background Research and Previous Work
 
-After reviewing other background literature and works from other authors witin this field, most people have not really ventured into how a video will trend on Youtube. Most findings online are analysis or unique findings of popular videos. Several people have done research to predict if a video will be popular on Youtube but do not cover the scope if it will trend on Youtube. These findings can still be helpful and lead this research into the right direction, however; the analysis done for this project will be new.
+After reviewing other background literature and works from other authors witin this field, most people have not really ventured into how a video will trend on Youtube. Most findings online are analysis or unique findings of popular videos. Several people have done research to predict if a video will be popular on Youtube but do not cover the scope if it will reach the trending section on Youtube. These findings can still be helpful and lead this research into the right direction, however; the analysis done for this project will mostly be new.
 
 ## 3. Choice of Data-sets
 To understand what determines if a video will trend on Youtube the datasets chosen for this project are a trending Youtube videos (US) and a dataset of public Youtube videos[2][3]. 
 
-The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used a multi-classifier with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
+The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multi-classifier with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
 
 Afterwards, the model is built wihtin the trending dataset it will be applied onto the data set of public Youtube videos and will be evaluate how accurate the model is at predicting a trending Youtube video. To test if this works the datasets can be compared to find which video trended and if the dataset was able to predict the trending videos on the public videos dataset then it will be successful. 
 

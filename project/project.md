@@ -1,5 +1,8 @@
 # Trending Youtube Videos Analysis
 
+- [ ] Please add references
+- [ ] Please add abstract 
+
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-327/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-327/actions)
 
 * Adam Chai, fa20-523-327

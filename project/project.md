@@ -4,6 +4,9 @@
 - [ ] Please add abstract 
 
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-327/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-327/actions)
+[![Status](https://github.com/cybertraining-dsc/fa20-523-327/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-327/actions)
+Status: in progress
+
 
 * Adam Chai, fa20-523-327
 * [Edit](https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/project.md)

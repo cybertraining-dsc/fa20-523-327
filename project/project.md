@@ -15,7 +15,7 @@ Status: in progress
 
 ## Abstract
 
-need to add abstract
+In this modern era of the internet revolution, consumption of all media types is easier than ever. Going onto the internet and finding interesting content takes less than minute to do. In the already growing industry of amateur video production, Youtube is the go to platform for viewers and creators to collide. However, it is harder for video creators to make an interesting video most people can enjoy than a viewer to find one of those videos. This report will address this issue by creating a prediction of how Youtube popularizes a video and a solution to make a video go viral.
 
 Contents
 

@@ -44,6 +44,7 @@ but these criterians Youtube has set are not defined[1]. Meaning, the determinan
 After reviewing other background literature and works from other authors witin this field, most people have not really ventured into how a video will trend on Youtube. Most findings online are analysis or unique findings of popular videos. Several people have done research to predict if a video will be popular on Youtube but do not cover the scope if it will reach the trending section on Youtube. These findings can still be helpful and lead this research into the right direction, however; the analysis done for this project will mostly be new.
 
 ## 3. Choice of Data-sets
+
 To understand what determines if a video will trend on Youtube the datasets chosen for this project are a trending Youtube videos (US) and a dataset of public Youtube videos[2][3]. 
 
 The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multi-classifier with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
@@ -73,9 +74,10 @@ This section will be addressed upon completion
 Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the *FA20-BL-ENGR-E534-11530: Big Data Applications* course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
 
 ## 8. References
+
 [^1]: Google Staff, Trending on Youtube, Google. <https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.>
 
-[^2]: Jolly. Mitchell, Trending YouTube Video Statistics, Kaggle. <https://www.kaggle.com/datasnaek/youtube-new >
+[^2]: Jolly. Mitchell, Trending YouTube Video Statistics, Kaggle. <https://www.kaggle.com/datasnaek/youtube-new>
 
 [^3]: Jain, Guarav, Youtube Scrapped Data, Kaggle. <https://www.kaggle.com/gaurav2022/youtube-scrapped-data>
 

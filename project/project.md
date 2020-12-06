@@ -71,7 +71,7 @@ The dataset was retrieved from the popular data science website, Kaggle, and man
 
 ## 4.Data Preprocessing 
 
-All work done on this project was completed through Google Colab. Once the dataset is imported from Kaggle onto Google Colab data preprocessing is necessary to translate the raw data into a readable format. 
+All work done on this project was completed through Google Colab. Once the dataset is imported from Kaggle onto Google Colab data preprocessing is necessary to translate the raw data into a readable format. Pandas and Datetime are used for data preprocessing. 
 
 To begin there are several labels which can be taken out of the model as they do not appear revelant or cannot be run through the model:
 
@@ -87,9 +87,13 @@ To address duplicates within the dataset after checking all records there are no
 Several labels need to be converted into an integer so they can be ran through the model:
 
 *trending_date
+
 *publish_time
+
 *comments_disabled
+
 *ratings_disabled
+
 *video_error_or_removed
 
 Python reads the trending_date and publish_time labels as objects which needs to be changed to integer values. To convert the data type the labels first need to be converted into datetime. After, another datetime function will be used to convert the month, day, and year into their own columns. 
@@ -101,15 +105,12 @@ Next the remaining three labels can be easily converted from their boolean value
 Figure 2: Show how this is done
 
 
-### 4.1. Hardware Component
+Result of preprocessed data
 
-This section will be addressed once I go to office hours
+Figure 3: Show snapshot
 
-### 4.2 Software Component
 
-This section will be addressed once I go to office hours
-
-## 5. Inference
+## 5. Model
 
 The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multi-classifier with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
 

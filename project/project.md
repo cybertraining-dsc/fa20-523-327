@@ -112,7 +112,9 @@ Figure 3: Show snapshot
 
 ## 5. Model
 
-The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multi-classifier with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
+The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
+
+To begin model creation the 80/20, Train/Test Ratio, will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[6]. To determine the accuracy of the model         
 
 ## 6. Conclusion
 
@@ -132,7 +134,9 @@ Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and th
 
 [^4]: Li. Yuping, Eng. Kent, Zhang. Liqian, YouTube Videos Prediction: Will this video be popular?, Stanford <http://cs229.stanford.edu/proj2019aut/data/assignment_308832_raw/26647615.pdf>
 
-[^5] Chai, Adam <https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/youtubeanalysis.ipynb>
+[^5]: Chai, Adam <https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/youtubeanalysis.ipynb>
+
+[^6]: Pradeep, Gulipalli.  The Pareto Principle for Data Scientist, KDnuggets. <https://www.kdnuggets.com/2019/03/pareto-principle-data-scientists.html>
 
 [^cloudmesh-benchmark]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <https://github.com/cloudmesh/cloudmesh-common>
 

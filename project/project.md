@@ -41,11 +41,33 @@ but these criterians Youtube has set are not defined[1]. Meaning, the determinan
 
 ## 2. Background Research and Previous Work
 
-After reviewing other background literature and works from other authors witin this field, most people have not really ventured into how a video will trend on Youtube. Most findings online are analysis or unique findings of popular videos. Several people have done research to predict if a video will be popular on Youtube but do not cover the scope if it will reach the trending section on Youtube. These findings can still be helpful and lead this research into the right direction, however; the analysis done for this project will mostly be new.
+After reviewing other background literature and works from other authors witin this field,  people have ventured into how a video will be popular on Youtube. Most findings online are analysis or unique findings for popular videos. Several people have done research to predict if a video will be popular on Youtube but do not cover the scope if it will reach the trending section on Youtube. These findings can still be helpful and lead this research into the right direction.
 
 ## 3. Choice of Data-sets
 
-To understand what determines if a video will trend on Youtube the datasets chosen for this project are a trending Youtube videos (US) and a dataset of public Youtube videos[2][3]. 
+To understand what determines if a video will trend on Youtube the dataset chosen for this project is a trending Youtube videos dataset (US)[2]. 
+
+The Trending Youtube dataset contains 40,949 entries and 16 labels covering the basic information of a trending Youtube video. 
+
+| Label      | Description |
+| ----------- | ----------- |
+| video_id| unique video id|
+| trending_date| the date when a video trended on Youtube|
+| title| title of the video|
+| channel_title| name of channel that created the video|
+| category_id| category of video|
+| publish_time| time and date when the video was uploaded|
+| tags| kewords associated with the video|
+| views| the amount of views a video has    |
+| likes| the amount of likes a video has|
+| comment_count| the amount of comments commented|
+| thumbnail_link| link to thumbnail|
+| comments_disabled| boolean variable for allowing comments|
+| ratings_disabled| boolean variable for allowing ratings (likes, dislikes)|
+| video_error_or_removed| boolean variable if a video is still available|
+| description| the description of the video|
+
+The dataset was retrieved from the popular data science website, Kaggle, and many people have done analysis on it. 
 
 The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multi-classifier with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
 

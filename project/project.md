@@ -67,7 +67,7 @@ The Trending Youtube dataset contains 40,949 entries and 16 labels covering the 
 | video_error_or_removed| boolean variable if a video is still available|
 | description| the description of the video|
 
-The dataset was retrieved from the popular data science website, Kaggle, and many people have done analysis on it. 
+The dataset was retrieved from the popular data science website, Kaggle, and many people have done analysis on it. These labels will be used in creating a model and predicting if a video will trend on Youtube. The drawbacks of using this dataset are important labels not covered such as the number of subscribers a channel has and older data is being used (all videos were uploaded and trended between 2017 and 2018).
 
 The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multi-classifier with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
 

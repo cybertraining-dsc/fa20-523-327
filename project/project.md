@@ -43,7 +43,7 @@ but these criterians Youtube has set are not defined[1]. Meaning, the determinan
 
 After reviewing other background literature and works from other authors witin this field,  people have ventured into how a video will be popular on Youtube. Most findings online are analysis or unique findings for popular videos. Several people have done research to predict if a video will be popular on Youtube but do not cover the scope if it will reach the trending section on Youtube. These findings can still be helpful and lead this research into the right direction.
 
-## 3. Choice of Data-sets
+## 3. Choice of Data-set
 
 To understand what determines if a video will trend on Youtube the dataset chosen for this project is a trending Youtube videos dataset (US)[2]. 
 
@@ -67,13 +67,39 @@ The Trending Youtube dataset contains 40,949 entries and 16 labels covering the 
 | video_error_or_removed| boolean variable if a video is still available|
 | description| the description of the video|
 
-The dataset was retrieved from the popular data science website, Kaggle, and many people have done analysis on it. These labels will be used in creating a model and predicting if a video will trend on Youtube. The drawbacks of using this dataset are important labels not covered such as the number of subscribers a channel has and older data is being used (all videos were uploaded and trended between 2017 and 2018).
+The dataset was retrieved from the popular data science website, Kaggle, and many people have done analysis on it. These labels will be used in creating a model to discover how a video will trend on Youtube. The drawbacks of using this dataset are various labels are not covered such as the number of subscribers a channel has or the likelihood of someone that sees the video will click on it and older data is being used (all videos were uploaded and trended between 2017 and 2018).
 
-The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multi-classifier with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
+## 4.Data Preprocessing 
 
-Afterwards, the model is built wihtin the trending dataset it will be applied onto the data set of public Youtube videos and will be evaluate how accurate the model is at predicting a trending Youtube video. To test if this works the datasets can be compared to find which video trended and if the dataset was able to predict the trending videos on the public videos dataset then it will be successful. 
+All work done on this project was completed through Google Colab. Once the dataset is imported from Kaggle onto Google Colab data preprocessing is necessary to translate the raw data into a readable format. 
 
-## 4. Methodology
+To begin there are several labels which can be taken out of the model as they do not appear revelant or cannot be run through the model:
+
+*video_id: unique identifier for each video not necessary to use
+*title: cannot be translated into a numerical value
+*channel_title: cannot be translated into a numerical value
+*tags: many tags appear irrelevant to the actual video therefore this will be taken out
+*thumbnail_link: cannot be ran through model
+*description: irrelevant, does not add value to most videos 
+
+To address duplicates within the dataset after checking all records there are no duplicates within the dataset, except for descriptions which are empty. After removing descriptions from the dataset duplicates will no longer be an issue. 
+
+Several labels need to be converted into an integer so they can be ran through the model:
+
+*trending_date
+*publish_time
+*comments_disabled
+*ratings_disabled
+*video_error_or_removed
+
+Python reads the trending_date and publish_time labels as objects which needs to be changed to integer values. To convert the data type the labels first need to be converted into datetime. After, another datetime function will be used to convert the month, day, and year into their own columns. 
+
+Figure 1: Show how this is done
+
+Next the remaining three labels can be easily converted from their boolean values into 1/0 values.
+
+Figure 2: Show how this is done
+
 
 ### 4.1. Hardware Component
 
@@ -85,7 +111,7 @@ This section will be addressed once I go to office hours
 
 ## 5. Inference
 
-This section will be addressed upon completion
+The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multi-classifier with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
 
 ## 6. Conclusion
 

@@ -122,9 +122,9 @@ After going through combinations of labels, when the models had every label it p
 When diving deeper into the dataset there are clear preferences for videos under certain categories. 
 
 
-Solarized dark             |  Solarized Ocean
+Count of videos by Category            |  Count of Top 10 Categories
 :-------------------------:|:-------------------------:
-![Figure 5](https://user-images.githubusercontent.com/66979171/101402874-32ddbe00-3889-11eb-9274-6f55231798d0.png)  | ![Figure 6](https://user-images.githubusercontent.com/66979171/101402893-3c672600-3889-11eb-8fef-9cad0240f994.png)(https://...Ocean.png)
+![Figure 5](https://user-images.githubusercontent.com/66979171/101402874-32ddbe00-3889-11eb-9274-6f55231798d0.png)  | ![Figure 6](https://user-images.githubusercontent.com/66979171/101402893-3c672600-3889-11eb-8fef-9cad0240f994.png)
 
 
 Category ID List

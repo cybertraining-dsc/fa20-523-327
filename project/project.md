@@ -120,7 +120,7 @@ After going through combinations of labels, when the models had every label it p
 
 ## 6. Benchmarks
 
-The performance measures for this program was done through Cloudmesh StopWatch and Benchmark. The instances where the benchmark was used was for loading the dataset, data preparation, each model, and the overral code execution.
+The performance measures for this program were done through Cloudmesh StopWatch and Benchmark. The instances where the benchmark were used for loading the dataset, data preparation, each model, and the overral code execution.
 
 ## 7. Acknowledgments 
 

@@ -27,15 +27,15 @@ Contents
 
 The final project for this class will be focused on trending Youtube videos. Specifically, this project will be using a trending Youtube videos dataset (US only), and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience whom find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, and the Google Staff has hinted what will make a video trend,
 
-Are appealing to a wide range of viewers
+* Are appealing to a wide range of viewers
 
-Are not misleading, cickbaity, or sensational
+* Are not misleading, cickbaity, or sensational
 
-Capture the breadth of what's happening on YouTube and in the world
+* Capture the breadth of what's happening on YouTube and in the world
 
-Showcase a diversity of creators 
+* Showcase a diversity of creators 
 
-Ideally, are suprising or novel
+* Ideally, are suprising or novel
 
 but these criterians Youtube has set are not defined[1]. Meaning, the determinants for how a Youtube video will trend will not be given out and it is up for Youtube content creators to find this out themselves. Youtube content creators are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos that can appeal to a wide audience is difficult. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.
 
@@ -111,6 +111,8 @@ The model being built for this project will be using Decision Tree and Random Fo
 To begin model creation the 80/20, Train/Test Ratio, will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[6]. To determine the accuracy of the model an explained variance score will be applied to determine accuracy. Explained variance is the measure of discrpenecy between a model and actual data [7]. The best possible score is 1.0 meaning there is a stronger strength of association. When creating the model it is important to check if there are highly correlated predictors in the model or else the possibility of multicollinearity can occur. To find highly correlated variables Pearon's correlation coefficient can be used. Correlation coefficients are used to measure how strong a relationship is between two variables [8]. A value of one indicates a strong positive relationship whereas negative one indicates strong negative realtionship. 
 
 ![Figure 3](https://user-images.githubusercontent.com/66979171/101300399-5271d980-37ea-11eb-8f48-efabc9d7e0d0.png)
+
+
 
 ## 6. Conclusion
 

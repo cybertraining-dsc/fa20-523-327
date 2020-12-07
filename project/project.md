@@ -98,16 +98,16 @@ Several labels need to be converted into an integer so they can be ran through t
 
 Python reads the trending_date and publish_time labels as objects which needs to be changed to integer values. To convert the data type the labels first need to be converted into datetime. After, another datetime function will be used to convert the month, day, and year into their own columns. 
 
-Figure 1: Show how this is done
+![Figure 1](https://user-images.githubusercontent.com/66979171/101300290-f6a75080-37e9-11eb-9e7c-61b067cae41f.png)
 
 Next the remaining three labels can be easily converted from their boolean values into 1/0 values.
 
-Figure 2: Show how this is done
+![Figure 2](https://user-images.githubusercontent.com/66979171/101300375-3ec67300-37ea-11eb-8197-faa05a5d0565.png)
 
 
 Result of preprocessed data
 
-Figure 3: Show snapshot
+![Figure 3](https://user-images.githubusercontent.com/66979171/101300399-5271d980-37ea-11eb-8f48-efabc9d7e0d0.png)
 
 
 ## 5. Model

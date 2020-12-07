@@ -111,7 +111,7 @@ To begin model creation the 80/20, Train/Test Ratio, will be used to create the 
 
 ![Figure 3](https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/images/figure3.png)
 
-When looking at the model it is clear there is high correlation between likes, dislikes, and comment_count. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell just short of .9. 
+When looking at the model it is clear there is high correlation between likes, dislikes, category_id, and comment_count. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell just short of .9. 
 
 After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .95. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actualy values. Several discrepencies shown in the image are an over prediction early within the model and near the end. Although there are over predictions it still closely follows actual values. 
 
@@ -142,7 +142,7 @@ Category ID List
 | 27| Education  |
 | 28| Science & Technology  |
 
-The full list of cateogry IDs can be found here: https://gist.github.com/dgp/1b24bf2961521bd75d6c
+The full list of cateogry IDs can be found [HERE](https://gist.github.com/dgp/1b24bf2961521bd75d6c)
 
 Many channels are able to consistently reach the trending section. 
 
@@ -167,11 +167,11 @@ The performance measures for this program were done through Cloudmesh StopWatch 
 
 When inspecting the results for the tests, Model 1 took 15 seconds to complete while the final model took 24 seconds. Model 1 contained 4 labels while the final model had 13. By increasing the amount of labels there are in the model there is a 62.5% increase in time for execution. 
 
-## 7. Conclusion
+## 8. Conclusion
 
-The results indicate engagement from viewers is vital for a video to trend on Youtube. For a video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Many Youtube channels adapated to this model producing videos consistenly reaching the trending section. 
+The results indicate engagement from viewers is vital for a video to trend on Youtube. For a video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Many Youtube channels adapated to this model producing videos consistenly reaching the trending section. By engaging viewer interaction and producing generally accepting content a Youtuber can increase the likelihood their video will reach the trending section.
 
-## 8. Acknowledgments 
+## 9. Acknowledgments 
 
 Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the *FA20-BL-ENGR-E534-11530: Big Data Applications* course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
 

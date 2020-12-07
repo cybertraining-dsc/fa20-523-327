@@ -97,11 +97,11 @@ Several labels need to be converted into an integer so they can be ran through t
 
 Python reads the trending_date and publish_time labels as objects which needs to be changed to integer values. To convert the data type the labels first need to be converted into datetime. After, another datetime function will be used to convert the month, day, and year into their own columns. 
 
-![Figure 1](https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/images/figure1.png)
+![Figure 1](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png)
 
 Next the remaining three labels can be easily converted from their boolean values into 1/0 values.
 
-![Figure 2](https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/images/figure2.png)
+![Figure 2](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure2.png)
 
 ## 5. Model
 
@@ -109,13 +109,13 @@ The model being built for this project will be using Scikit-learn Decision Tree 
 
 To begin model creation the 80/20, Train/Test Ratio, will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[6]. To determine the accuracy of the model an explained variance score will be applied to determine accuracy. Explained variance is the measure of discrpenecy between a model and actual data [7]. The best possible score is 1.0 meaning there is a stronger strength of association. When creating the model it is important to check if there are highly correlated predictors in the model or else the possibility of multicollinearity can occur. To find highly correlated variables Pearon's correlation coefficient can be used. Correlation coefficients are used to measure how strong a relationship is between two variables [8]. A value of one indicates a strong positive relationship whereas negative one indicates strong negative realtionship. 
 
-![Figure 3](https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/images/figure3.png)
+![Figure 3](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure3.png)
 
 When looking at the model it is clear there is high correlation between likes, dislikes, category_id, and comment_count. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell just short of .9. 
 
 After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .95. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actualy values. Several discrepencies shown in the image are an over prediction early within the model and near the end. Although there are over predictions it still closely follows actual values. 
 
-![Figure 4](https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/images/figure1.png)
+![Figure 4](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png)
 
 ## 6. Additional Findings
 
@@ -124,7 +124,7 @@ When diving deeper into the dataset there are clear preferences for videos under
 
 Count of videos by Category            |  Count of Top 10 Categories
 :-------------------------:|:-------------------------:
-![Figure 5](https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/images/figure5.png)  | ![Figure 6](https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/images/figure6.png)
+![Figure 5](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure5.png)  | ![Figure 6](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure6.png)
 
 
 Category ID List
@@ -163,7 +163,7 @@ Many channels are able to consistently reach the trending section.
 
 The performance measures for this program were done through Cloudmesh StopWatch and Benchmark. The instances where the benchmark were used for loading the dataset, data preparation, each model, and the overral code execution.
 
-![Figure 7](https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/images/figure7.png)
+![Figure 7](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure7.png)
 
 When inspecting the results for the tests, Model 1 took 15 seconds to complete while the final model took 24 seconds. Model 1 contained 4 labels while the final model had 13. By increasing the amount of labels there are in the model there is a 62.5% increase in time for execution. 
 

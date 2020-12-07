@@ -112,6 +112,14 @@ To begin model creation the 80/20, Train/Test Ratio, will be used to create the 
 
 ![Figure 3](https://user-images.githubusercontent.com/66979171/101300399-5271d980-37ea-11eb-8f48-efabc9d7e0d0.png)
 
+When looking at the model it is clear there is high correlation between likes, dislikes, and comment_count. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell just short of .9. 
+
+After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .95. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. 
+
+
+Figure 4
+
+
 
 
 ## 6. Conclusion

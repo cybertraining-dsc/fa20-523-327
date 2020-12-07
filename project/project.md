@@ -117,7 +117,7 @@ After going through combinations of labels, when the models had every label it p
 
 ![Figure 4](https://user-images.githubusercontent.com/66979171/101301708-85b66780-37ee-11eb-8220-98f57e28e59c.png)
 
-## 6. Inferences
+## 6. Additional Findings
 
 When diving deeper into the dataset there are clear preferences for videos under certain categories. 
 
@@ -144,7 +144,20 @@ Category ID List
 
 The full list of cateogry IDs can be found here: https://gist.github.com/dgp/1b24bf2961521bd75d6c
 
+Many channels are able to consistently reach the trending section. 
 
+| Channel Title | Number of trended videos |
+| ----------- | ----------- |
+| ESPN| 203  |
+| The Tonight Show Starring Jimmy Fallon| 197   |
+| Vox| 193 |
+| TheEllenShow| 193  |
+| Netflix| 193  |
+| The Late Show with Stephen Colbert| 187  |
+| Jimmy Kimmel Live| 186  |
+| Late Night with Seth Meyers| 183  |
+| Screen Junkies| 182  |
+| NBA| 181  |
 
 ## 7. Benchmarks
 

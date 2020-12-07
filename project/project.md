@@ -105,7 +105,7 @@ Next the remaining three labels can be easily converted from their boolean value
 
 ## 5. Model
 
-The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
+The model being built for this project will be using Scikit-learn Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
 
 To begin model creation the 80/20, Train/Test Ratio, will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[6]. To determine the accuracy of the model an explained variance score will be applied to determine accuracy. Explained variance is the measure of discrpenecy between a model and actual data [7]. The best possible score is 1.0 meaning there is a stronger strength of association. When creating the model it is important to check if there are highly correlated predictors in the model or else the possibility of multicollinearity can occur. To find highly correlated variables Pearon's correlation coefficient can be used. Correlation coefficients are used to measure how strong a relationship is between two variables [8]. A value of one indicates a strong positive relationship whereas negative one indicates strong negative realtionship. 
 
@@ -161,15 +161,19 @@ Many channels are able to consistently reach the trending section.
 
 ## 7. Benchmarks
 
-
-
 The performance measures for this program were done through Cloudmesh StopWatch and Benchmark. The instances where the benchmark were used for loading the dataset, data preparation, each model, and the overral code execution.
+
+![Figure 7](https://user-images.githubusercontent.com/66979171/101410949-f9ab4b00-3894-11eb-8a82-a7003cdf3ad0.png)
+
+When inspecting the results for the tests, Model 1 took 15 seconds to complete while the final model took 24 seconds. Model 1 contained 4 labels while the final model had 13. By increasing the amount of labels there are in the model there is a 62.5% increase in time for execution. 
+
+## 7. Conclusion
 
 ## 8. Acknowledgments 
 
 Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the *FA20-BL-ENGR-E534-11530: Big Data Applications* course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
 
-## 9. References
+## 10. References
 
 [^1]: Google Staff, Trending on Youtube, Google. <https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.>
 

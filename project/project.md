@@ -114,7 +114,9 @@ Figure 3: Show snapshot
 
 The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
 
-To begin model creation the 80/20, Train/Test Ratio, will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[6]. To determine the accuracy of the model         
+To begin model creation the 80/20, Train/Test Ratio, will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[6]. To determine the accuracy of the model an explained variance score will be applied to determine accuracy. Explained variance is the measure of discrpenecy between a model and actual data [7]. The best possible score is 1.0 meaning there is a stronger strength of association. When creating the model it is important to check if there are highly correlated predictors in the model or else the possibility of multicollinearity can occur. To find highly correlated variables Pearon's correlation coefficient can be used. Correlation coefficients are used to measure how strong a relationship is between two variables [8]. A value of one indicates a strong positive relationship whereas negative one indicates strong negative realtionship. 
+
+Figure 3: Show pearson table
 
 ## 6. Conclusion
 
@@ -137,6 +139,10 @@ Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and th
 [^5]: Chai, Adam <https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/youtubeanalysis.ipynb>
 
 [^6]: Pradeep, Gulipalli.  The Pareto Principle for Data Scientist, KDnuggets. <https://www.kdnuggets.com/2019/03/pareto-principle-data-scientists.html>
+
+[^7]: Statistics How Staff, Explained Variance Variation, StatisticsHowTo. <https://www.statisticshowto.com/explained-variance-variation/>
+
+[^8]: Statsitcs How Staff, Correlation Coefficient Formula, StatsticsHowTo. <https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/>
 
 [^cloudmesh-benchmark]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <https://github.com/cloudmesh/cloudmesh-common>
 

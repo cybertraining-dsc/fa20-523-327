@@ -116,12 +116,11 @@ When looking at the model it is clear there is high correlation between likes, d
 
 After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .95. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actualy values. Several discrepencies shown in the image are an over prediction early within the model and near the end. Although there are over predictions it still closely follows actual values. 
 
-
 ![Figure 4](https://user-images.githubusercontent.com/66979171/101301708-85b66780-37ee-11eb-8220-98f57e28e59c.png)
 
-## 6. Conclusion
+## 6. Benchmarks
 
-This section will be addressed upon completion
+The performance measures for this program was done through Cloudmesh StopWatch and Benchmark. The instances where the benchmark was used was for loading the dataset, data preparation, each model, and the overral code execution.
 
 ## 7. Acknowledgments 
 
@@ -145,5 +144,5 @@ Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and th
 
 [^8]: Statsitcs How Staff, Correlation Coefficient Formula, StatsticsHowTo. <https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/>
 
-[^cloudmesh-benchmark]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <https://github.com/cloudmesh/cloudmesh-common>
+[^9]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <https://github.com/cloudmesh/cloudmesh-common>
 

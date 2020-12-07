@@ -121,9 +121,9 @@ After going through combinations of labels, when the models had every label it p
 
 When diving deeper into the dataset there are clear preferences for videos under certain categories. 
 
-Figure 5: Show plot of count of categories
+![Figure 5](https://user-images.githubusercontent.com/66979171/101402874-32ddbe00-3889-11eb-9274-6f55231798d0.png)
 
-Figure 6: Show categories couhnt
+![Figure 6](https://user-images.githubusercontent.com/66979171/101402893-3c672600-3889-11eb-8fef-9cad0240f994.png)
 
 Category ID List
 
@@ -141,6 +141,7 @@ Category ID List
 | 28| Science & Technology  |
 
 The full list of cateogry IDs can be found here: https://gist.github.com/dgp/1b24bf2961521bd75d6c
+
 ## 7. Benchmarks
 
 

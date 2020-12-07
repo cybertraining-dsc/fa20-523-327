@@ -75,26 +75,26 @@ All work done on this project was completed through Google Colab. Once the datas
 
 To begin there are several labels which can be taken out of the model as they do not appear revelant or cannot be run through the model:
 
-*video_id: unique identifier for each video not necessary to use
-*title: cannot be translated into a numerical value
-*channel_title: cannot be translated into a numerical value
-*tags: many tags appear irrelevant to the actual video therefore this will be taken out
-*thumbnail_link: cannot be ran through model
-*description: irrelevant, does not add value to most videos 
+* video_id: unique identifier for each video not necessary to use
+* title: cannot be translated into a numerical value
+* channel_title: cannot be translated into a numerical value
+* tags: many tags appear irrelevant to the actual video therefore this will be taken out
+* thumbnail_link: cannot be ran through model
+* description: irrelevant, does not add value to most videos 
 
 To address duplicates within the dataset after checking all records there are no duplicates within the dataset, except for descriptions which are empty. After removing descriptions from the dataset duplicates will no longer be an issue. 
 
 Several labels need to be converted into an integer so they can be ran through the model:
 
-*trending_date
+* trending_date
 
-*publish_time
+* publish_time
 
-*comments_disabled
+* comments_disabled
 
-*ratings_disabled
+* ratings_disabled
 
-*video_error_or_removed
+* video_error_or_removed
 
 Python reads the trending_date and publish_time labels as objects which needs to be changed to integer values. To convert the data type the labels first need to be converted into datetime. After, another datetime function will be used to convert the month, day, and year into their own columns. 
 
@@ -104,19 +104,13 @@ Next the remaining three labels can be easily converted from their boolean value
 
 ![Figure 2](https://user-images.githubusercontent.com/66979171/101300375-3ec67300-37ea-11eb-8197-faa05a5d0565.png)
 
-
-Result of preprocessed data
-
-![Figure 3](https://user-images.githubusercontent.com/66979171/101300399-5271d980-37ea-11eb-8f48-efabc9d7e0d0.png)
-
-
 ## 5. Model
 
 The model being built for this project will be using Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [4].
 
 To begin model creation the 80/20, Train/Test Ratio, will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[6]. To determine the accuracy of the model an explained variance score will be applied to determine accuracy. Explained variance is the measure of discrpenecy between a model and actual data [7]. The best possible score is 1.0 meaning there is a stronger strength of association. When creating the model it is important to check if there are highly correlated predictors in the model or else the possibility of multicollinearity can occur. To find highly correlated variables Pearon's correlation coefficient can be used. Correlation coefficients are used to measure how strong a relationship is between two variables [8]. A value of one indicates a strong positive relationship whereas negative one indicates strong negative realtionship. 
 
-Figure 3: Show pearson table
+![Figure 3](https://user-images.githubusercontent.com/66979171/101300399-5271d980-37ea-11eb-8f48-efabc9d7e0d0.png)
 
 ## 6. Conclusion
 

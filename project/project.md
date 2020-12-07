@@ -117,15 +117,41 @@ After going through combinations of labels, when the models had every label it p
 
 ![Figure 4](https://user-images.githubusercontent.com/66979171/101301708-85b66780-37ee-11eb-8220-98f57e28e59c.png)
 
-## 6. Benchmarks
+## 6. Inferences
+
+When diving deeper into the dataset there are clear preferences for videos under certain categories. 
+
+Figure 5: Show plot of count of categories
+
+Figure 6: Show categories couhnt
+
+Category ID List
+
+| Category ID      | Description |
+| ----------- | ----------- |
+| 1| Film & Animation  |
+| 10| Music   |
+| 17| Pets & Animals  |
+| 22| People & Blogs  |
+| 23| Comedy  |
+| 24| Entertainment  |
+| 25| News & Politics  |
+| 26| Howto & Style  |
+| 27| Education  |
+| 28| Science & Technology  |
+
+The full list of cateogry IDs can be found here: https://gist.github.com/dgp/1b24bf2961521bd75d6c
+## 7. Benchmarks
+
+
 
 The performance measures for this program were done through Cloudmesh StopWatch and Benchmark. The instances where the benchmark were used for loading the dataset, data preparation, each model, and the overral code execution.
 
-## 7. Acknowledgments 
+## 8. Acknowledgments 
 
 Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the *FA20-BL-ENGR-E534-11530: Big Data Applications* course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
 
-## 8. References
+## 9. References
 
 [^1]: Google Staff, Trending on Youtube, Google. <https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.>
 
@@ -137,11 +163,15 @@ Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and th
 
 [^5]: Chai, Adam <https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/youtubeanalysis.ipynb>
 
-[^6]: Pradeep, Gulipalli.  The Pareto Principle for Data Scientist, KDnuggets. <https://www.kdnuggets.com/2019/03/pareto-principle-data-scientists.html>
+[^6]: Pradeep, Gulipalli, The Pareto Principle for Data Scientist, KDnuggets. <https://www.kdnuggets.com/2019/03/pareto-principle-data-scientists.html>
 
 [^7]: Statistics How Staff, Explained Variance Variation, StatisticsHowTo. <https://www.statisticshowto.com/explained-variance-variation/>
 
 [^8]: Statsitcs How Staff, Correlation Coefficient Formula, StatsticsHowTo. <https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/>
 
 [^9]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <https://github.com/cloudmesh/cloudmesh-common>
+
+[^10]: Prathap, Dinesh. Youtube api video category list, Github. <https://gist.github.com/dgp/1b24bf2961521bd75d6c>
+
+
 

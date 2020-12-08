@@ -11,7 +11,7 @@ Adam Chai, fa20-523-327
 
 ## Abstract
 
-The internet has created a revolution for how people connect with each other, understand topics, and consume information. Today, consumption of the media is easier than ever. Going onto the internet and finding interesting content takes less than minute to do. In the already growing industry of amateur video production, Youtube is the go to platform for viewers and creators to collide. For hours on end viewers can watch nearly any type of content uploaded onto the site. However, it is harder for video creators to make an interesting video people can enjoy than a viewer to find one of those videos. In the conjested mass of videos how can a Youtuber create a unique identity allowing their videos to go viral? This report will address this issue by creating a prediction of how Youtube popularizes a video and a solution to help a video go viral.
+The internet has created a revolution for how people connect, understand topics, and consume information. Today, the consumption of the media is easier than ever. Going onto the internet and finding interesting content takes less than a minute to do. In the already growing industry of amateur video production, Youtube is the go-to platform for viewers and creators to collide. For hours on end, viewers can watch nearly any type of content uploaded onto the site. However, it is harder for video creators to make an interesting video people can enjoy than a viewer to find one of those videos. In the congested mass of videos, how can a Youtuber create a unique identity allowing their videos to go viral? This report will address this issue by creating a prediction of how Youtube popularizes a video and a solution to help a video go viral.
 
 Contents
 
@@ -24,7 +24,7 @@ Contents
 
 ## 1. Introduction
 
-This report will be focused on trending Youtube videos. Specifically, it will be using a trending Youtube videos dataset (US only), and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience whom find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, and the Google Staff has hinted what will make a video trend,
+This report will be focused on trending Youtube videos. Specifically, it will be using a trending Youtube videos dataset (US only) and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience who find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, and the Google Staff has hinted what will make a video trend,
 
 * Are appealing to a wide range of viewers
 
@@ -34,13 +34,13 @@ This report will be focused on trending Youtube videos. Specifically, it will be
 
 * Showcase a diversity of creators 
 
-* Ideally, are suprising or novel
+* Ideally, are surprising or novel
 
-but these criterians Youtube has set are not well defined[^1]. Meaning, the determinants for how a Youtube video will trend will not be given out and it is up for Youtubers to interpret what exactly will allow a video to trend. Youtubers are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos appealling to a wide audience is difficult. It takes enourmous creativity and dedication for a random person to enjoy a video found online. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.
+but these criterion Youtube has set are not well defined[^1]. Meaning, the determinants for how a Youtube video will trend will not be given out and it is up for Youtubers to interpret what exactly will allow a video to trend. Youtubers are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos appealing to a wide audience is difficult. It takes enormous creativity and dedication for a random person to enjoy a video found online. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.
 
 ## 2. Background Research and Previous Work
 
-After reviewing other background literature and works from other authors witin this field,  people have ventured into how a video will be popular on Youtube. Most findings online are analysis or unique findings for popular videos. Several people have done research to predict if a video will be popular (views) on Youtube but do not cover the scope if it will reach the trending section on Youtube. These findings can still be helpful and lead this research into the right direction.
+After reviewing other background literature and works from other authors within this field,  people have ventured into how a video will be popular on Youtube. Most findings online are analysis or unique findings for popular videos. Several people have researched to predict if a video will be popular (views) on Youtube but do not cover the scope if it will reach the trending section on Youtube. These findings can still be helpful and lead this research in the right direction.
 
 ## 3. Choice of Data-set
 
@@ -53,12 +53,13 @@ The Trending Youtube dataset contains 40,949 entries and 16 labels covering the 
 | video_id| unique video id|
 | trending_date| the date when a video trended on Youtube|
 | title| title of the video|
-| channel_title| name of channel that created the video|
+| channel_title| name of the channel that created the video|
 | category_id| category of video|
 | publish_time| time and date when the video was uploaded|
-| tags| kewords associated with the video|
-| views| the amount of views a video has    |
-| likes| the amount of likes a video has|
+| tags| keywords associated with the video|
+| views| the number of views a video has    |
+| likes| the number of likes a video has|
+| dislikes| the number of dislikes a video has|
 | comment_count| the amount of comments commented|
 | thumbnail_link| link to thumbnail|
 | comments_disabled| boolean variable for allowing comments|
@@ -66,24 +67,24 @@ The Trending Youtube dataset contains 40,949 entries and 16 labels covering the 
 | video_error_or_removed| boolean variable if a video is still available|
 | description| the description of the video|
 
-The dataset was retrieved from the popular data science website, Kaggle, and many people have done analysis on it. These labels will be used in creating a model to discover how a video will trend on Youtube. The drawbacks of using this dataset are various labels are not covered such as the number of subscribers a channel has or the likelihood of someone that sees the video will click on it and older data is being used (all videos were uploaded and trended between 2017 and 2018).
+The dataset was retrieved from the popular data science website, Kaggle, and many people have analyzed it. These labels will be used in creating a model to discover how a video will trend on Youtube. Various analysis includes likes/dislikes predictor, comment creator, and many more. The drawbacks of using this dataset are various labels are not covered such as the number of subscribers a channel has or the likelihood of someone that sees the video will click on it and older data is being used (all videos were uploaded and trended between 2017 and 2018).
 
 ## 4.Data Preprocessing 
 
 All work done on this project was completed through Google Colab. Once the dataset is imported from Kaggle onto Google Colab data preprocessing is necessary to translate the raw data into a readable format. Pandas and Datetime are used for data preprocessing. 
 
-To begin there are several labels which can be taken out of the model as they do not appear revelant or cannot be run through the model:
+To begin there are several labels which can be taken out of the model as they do not appear relevant or cannot be run through the model:
 
 * video_id: unique identifier for each video not necessary to use
 * title: cannot be translated into a numerical value
 * channel_title: cannot be translated into a numerical value
 * tags: many tags appear irrelevant to the actual video therefore this will be taken out
-* thumbnail_link: cannot be ran through model
+* thumbnail_link: cannot be run through the model
 * description: irrelevant, does not add value to most videos 
 
-To address duplicates within the dataset after checking all records there are no duplicates within the dataset, except for descriptions which are empty. After removing descriptions from the dataset duplicates will no longer be an issue. 
+To address duplicates within the dataset after checking all records there are no duplicates within the dataset, except for empty descriptions. After removing descriptions from the dataset duplicates will no longer be an issue. 
 
-Several labels need to be converted into an integer so they can be ran through the model:
+Several labels need to be converted into an integer so they can be run through the model:
 
 * trending_date
 
@@ -95,13 +96,13 @@ Several labels need to be converted into an integer so they can be ran through t
 
 * video_error_or_removed
 
-Python reads the trending_date and publish_time labels as objects which needs to be changed to integer values. To convert the data type the labels first need to be converted into datetime. After, another datetime function will be used to convert the month, day, and year into their own columns. 
+Python reads the trending_date and publish_time labels as objects which need to be changed to integer values. To convert the data type the labels first need to be converted into datetime. After conversion, another datetime function will be used to separate the month, day, and year into their individual columns. 
 
 ![Figure 1](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png)
 
 **Figure 1:** Converting into Dates
 
-Next the remaining three labels can be easily converted from their boolean values into 1/0 values.
+Next, the remaining three labels can be easily converted from their boolean values into 1 or 0 values. 
 
 ![Figure 2](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure2.png)
 
@@ -109,17 +110,17 @@ Next the remaining three labels can be easily converted from their boolean value
 
 ## 5. Model
 
-The model being built for this project will be using Scikit-learn Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with tree-like structure, since there are unlimited number of layers, decision tree can achieve a high accuracy and cause an overfitting problem. Random Forest will randomnly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [^3].
+The model built for this project will be using Scikit-learn Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with a tree-like structure since there is an unlimited number of layers, the decision tree can achieve high accuracy and cause an overfitting problem. Random Forest will randomly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [^3].
 
-To begin model creation the 80/20, Train/Test Ratio, will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[^5]. To determine the accuracy of the model an explained variance score will be applied to determine accuracy. Explained variance is the measure of discrpenecy between a model and actual data [^6]. The best possible score is 1.0 meaning there is a stronger strength of association. When creating the model it is important to check if there are highly correlated predictors in the model or else the possibility of multicollinearity can occur. To find highly correlated variables Pearon's correlation coefficient can be used. Correlation coefficients are used to measure how strong a relationship is between two variables [^7]. A value of one indicates a strong positive relationship whereas negative one indicates strong negative realtionship. 
+To begin model creation the 80/20, Train/Test Ratio will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[^5]. To determine the accuracy of the model an explained variance score will be applied to determine accuracy. Explained variance is the measure of discrepancy between a model and actual data [^6]. The best possible score is 1.0 meaning there is a stronger strength of association. When creating the model it is important to check if there are highly correlated predictors in the model or else the possibility of multicollinearity can occur. To find highly correlated variables Pearson's correlation coefficient can be used. Correlation coefficients are used to measure how strong a relationship is between two variables [^7]. A value of one indicates a strong positive relationship whereas a negative one indicates a strong negative relationship. 
 
 ![Figure 3](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure3.png)
 
 **Figure 3:** Pearson's Correlation Graph
 
-When looking at the model it is clear there is high correlation between likes, dislikes, category_id, and comment_count. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell just short of .9. 
+When looking at the model it is clear there is a high correlation between likes, dislikes, category_id, and comment_count. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell scores around .9. 
 
-After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .95. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actualy values. Several discrepencies shown in the image are an over prediction early within the model and near the end. Although there are over predictions it still closely follows actual values. 
+After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .95. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actual values. Several discrepancies shown in the image are an over-prediction early within the model and near the end. Although there are over predictions it still closely follows actual values. 
 
 ![Figure 4](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png)
 
@@ -149,9 +150,9 @@ Category ID List
 | 27| Education  |
 | 28| Science & Technology  |
 
-The full list of cateogry IDs can be found [HERE](https://gist.github.com/dgp/1b24bf2961521bd75d6c) [^9]
+The full list of category IDs can be found [HERE](https://gist.github.com/dgp/1b24bf2961521bd75d6c) [^9]
 
-Many channels are able to consistently reach the trending section. 
+Many channels can consistently reach the trending section on a weekly basis. 
 
 | Channel Title | Number of trended videos |
 | ----------- | ----------- |
@@ -168,23 +169,23 @@ Many channels are able to consistently reach the trending section.
 
 ## 7. Benchmarks
 
-The performance measures for this program were done through Cloudmesh StopWatch and Benchmark[^8]. The instances where the benchmark were used for loading the dataset, data preparation, each model, and the overral code execution.
+The performance measures for this program were done through Cloudmesh StopWatch and Benchmark[^8]. The instances where benchmark was measured include loading the dataset, data preparation, timing each model, and the overall code execution.
 
 ![Figure 7](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure7.png)
 
 **Figure 7:** Benchmarks
 
-When inspecting the results for the tests, Model 1 took 15 seconds to complete while the final model took 24 seconds. Model 1 contained 4 labels while the final model had 13. By increasing the amount of labels there are in the model there is a 62.5% increase in time for execution. 
+When inspecting the results for the tests, Model 1 took 15 seconds to complete while the final model took 24 seconds. Model 1 contained 4 labels while the final model had 13. By increasing the number of labels there are in the model there is a 62.5% increase in time for execution. 
 
 ## 8. Conclusion
 
-The results indicate engagement from viewers is vital for a video to trend on Youtube. For a video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Many Youtube channels adapated to this model producing videos consistenly reaching the trending section. By engaging viewer interaction and producing generally accepting content a Youtuber can increase the likelihood their video will reach the trending section. 
+The results indicate engagement from viewers is vital for a video to trend on Youtube. For a video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Many Youtube channels adapted to this model producing videos consistently reaching the trending section. By engaging viewer interaction and producing generally accepting content a Youtuber can increase the likelihood their video will reach the trending section. 
 
 ## 8.1 Limitations
 
-Although this current work brings substantinal analysis and understanding to this topic the model could be improved in several ways. First, the dataset being used is missing various fields that can impact the likelihood if a video will trend such as the number of subscribers a channel has, the amount of people that see the video but do not click on the video, and does that channel promote ads on Youtube for viewers to checkout the channel. The number of subscribers is available to scrape but the other two fields are senesitive information not accessible to the public. It can be important to have this information because Youtube can prioritize channels uploading content under categories they want to surface or if they pay Youtube to surface their channel. As stated earlier the dataset being used is a couple years old and the way Youtube promotes videos could have changed within the time frame. Another limiting factor is the dataset being used only contains videos uploaded within the US meaning it does not account for videos uploaded worldwide. Youtube can prioritize certain content through select regions or Youtube promotes the same content throughout the world. The final limitation of this report was not being able to score Youtube video titles and thumbnails. Within Youtube's criteria for popular videos that appear as clickbait will not trend on Youtube. This entails titles and/or thumbnails must have ratings Youtube scores so it does not allow clickbait to surface. These are various limitations this report faces, however; once this class is over these will be addressed.      
+Although this current work brings substantial analysis and understanding of this topic the model could be improved in several ways. First, the dataset being used is missing various fields that can impact the likelihood of a video will trend such as the number of subscribers a channel has, the amount of people that see the video but do not click on the video, and does that channel promote ads on Youtube for viewers to check out the channel. The number of subscribers is available to scrape but the other two fields are sensitive information not accessible to the public. It can be important to have this information because Youtube can prioritize channels uploading content under categories they want to surface or if they pay Youtube to surface their channel. As stated earlier the dataset being used is a couple of years old and the way Youtube promotes videos could have changed within the time frame. Another limiting factor is the dataset being used only contains videos uploaded within the US meaning it does not account for videos uploaded worldwide. Youtube can prioritize certain content through select regions or Youtube promotes the same content throughout the world. The final limitation of this report was not being able to score Youtube video titles and thumbnails. Within Youtube's criteria for popular videos that appear as clickbait will not trend on Youtube. This entails titles and/or thumbnails must have ratings Youtube scores so it does not allow clickbait to surface. These are various limitations this report faces, however; once this class is over these will be addressed.
 
-## 9. Acknowledgments 
+## 9. Acknowledgments
 
 Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the *FA20-BL-ENGR-E534-11530: Big Data Applications* course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
 
@@ -202,11 +203,8 @@ Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and th
 
 [^6]: Statistics How Staff, Explained Variance Variation, StatisticsHowTo. <https://www.statisticshowto.com/explained-variance-variation/> [Accessed Dec 5, 2020]
 
-[^7]: Statsitcs How Staff, Correlation Coefficient Formula, StatsticsHowTo. <https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/> [Accessed Dec 6, 2020]
+[^7]: Statistics How Staff, Correlation Coefficient Formula, StatsticsHowTo. <https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/> [Accessed Dec 6, 2020]
 
 [^8]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <https://github.com/cloudmesh/cloudmesh-common>
 
 [^9]: Prathap, Dinesh. Youtube api video category list, Github. <https://gist.github.com/dgp/1b24bf2961521bd75d6c> [Accessed Dec 7, 2020]
-
-
-

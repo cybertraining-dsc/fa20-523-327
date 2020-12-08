@@ -80,7 +80,7 @@ To begin there are several labels which can be taken out of the model as they do
 * channel_title: cannot be translated into a numerical value
 * tags: many tags appear irrelevant to the actual video therefore this will be taken out
 * thumbnail_link: cannot be run through the model
-* description: irrelevant, does not add value to most videos 
+* description: irrelevant for most videos, does not add value descriptions it appears to promote channel and sponsors
 
 To address duplicates within the dataset after checking all records there are no duplicates within the dataset, except for empty descriptions. After removing descriptions from the dataset duplicates will no longer be an issue. 
 
@@ -96,7 +96,7 @@ Several labels need to be converted into an integer so they can be run through t
 
 * video_error_or_removed
 
-Python reads the trending_date and publish_time labels as objects which need to be changed to integer values. To convert the data type the labels first need to be converted into datetime. After conversion, another datetime function will be used to separate the month, day, and year into their individual columns. 
+Pandas reads the trending_date and publish_time labels as objects which need to be changed to integer values. To convert date columns the data type first needs to be converted into datetime. After conversion, another datetime function will be used to separate the month, day, and year into their individual columns. 
 
 ![Figure 1](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png)
 
@@ -120,20 +120,19 @@ To begin model creation the 80/20, Train/Test Ratio will be used to create the m
 
 When looking at the model it is clear there is a high correlation between likes, dislikes, category_id, and comment_count. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell scores around .9. 
 
-After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .95. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actual values. Several discrepancies shown in the image are an over-prediction early within the model and near the end. Although there are over predictions it still closely follows actual values. 
+After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .96. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actual values. Several discrepancies shown in the image are an over-prediction early within the model and near the end. Although there are over predictions it still closely follows actual values. 
 
 ![Figure 4](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png)
 
-**Figure 4:** Predicted vs Actual Values Graph
+**Figure 4:** Predicted vs. Actual Values Graph
 
 ## 6. Additional Findings
 
-When diving deeper into the dataset there are clear preferences for videos under certain categories. 
+When diving deeper into the dataset there are clear preferences for videos under certain categories. Entertainment, Music, and Howto & Style categories dominate the trend for categories. This can be an indicator for Youtube's preferance of the type of content they want to mainstream on the website.
 
-**Figure 5:** Count of videos in each Category            |  **Figure 1:** Top 10 Categories
+**Figure 5:** Count of videos in each Category     |  **Figure 1:** Top 10 Categories
 :-------------------------:|:-------------------------:
 ![Figure 5](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure5.png)  | ![Figure 6](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure6.png)
-
 
 Category ID List
 
@@ -152,7 +151,7 @@ Category ID List
 
 The full list of category IDs can be found [HERE](https://gist.github.com/dgp/1b24bf2961521bd75d6c) [^9]
 
-Many channels can consistently reach the trending section on a weekly basis. 
+Many channels can consistently reach the trending section on a weekly basis. It appears Youtube tries to diversify and promote unique channels on the trending section.
 
 | Channel Title | Number of trended videos |
 | ----------- | ----------- |

@@ -40,11 +40,11 @@ but these criterion Youtube has set are not well defined[^1]. Meaning, the deter
 
 ## 2. Background Research and Previous Work
 
-After reviewing other background literature and works from other authors within this field,  people have ventured into how a video will be popular on Youtube. Most findings online are analysis or unique findings for popular videos. Several people have researched to predict if a video will be popular (views) on Youtube but do not cover the scope if it will reach the trending section on Youtube. Other analysis includes likes/dislikes predictor, comment creator, title scorer, and many more. These findings can still be helpful and lead this research in the right direction.
+After reviewing other background literature and works from other authors within this field,  people have ventured into how a video will be popular on Youtube. Most findings online are analysis or unique findings for popular videos. Several people have researched to predict if a video will be popular (views) on Youtube but do not cover the scope if it will reach the trending section on Youtube. Other analysis includes likes/dislikes predictor, comment creator, title scorer, and many more. A couple of these findings can still be helpful and lead this research in the right direction.
 
 ## 3. Choice of Data-set
 
-To understand what determines if a video will trend on Youtube the dataset chosen for this project is a trending Youtube videos dataset (US)[^2]. The dataset was retrieved from the popular data science website, Kaggle. The dataset chosen is one of the most popular datasets available on Kaggle and many people have analyzed it. The dataset is known for being readable and having a high usability score.
+To understand what determines if a video will trend on Youtube the dataset chosen for this project is a trending Youtube videos dataset (US)[^2]. Meaning all videos within the dataset are uploaded from the US and reached the trending section on Youtube. The dataset was retrieved from the popular data science website, Kaggle. The dataset chosen is one of the most popular datasets available on Kaggle and many people have analyzed it. The dataset is known for being readable and having a high usability score.
 
 The Trending Youtube dataset contains 40,949 entries and 16 labels covering the basic information of a trending Youtube video. 
 
@@ -75,12 +75,12 @@ All work done on this project was completed through Google Colab. Once the datas
 
 To begin there are several labels which can be taken out of the model as they do not appear relevant or cannot be run through the model:
 
-* video_id: unique identifier for each video not necessary to use
-* title: cannot be translated into a numerical value
-* channel_title: cannot be translated into a numerical value
-* tags: many tags appear irrelevant to the actual video therefore this will be taken out
+* video_id: this label is unique identifier for each video not necessary to use
+* title: could not be translated into a numerical value
+* channel_title: could not be translated into a numerical value
+* tags: many tags appear to be irrelevant to the actual video therefore this will be taken out
 * thumbnail_link: cannot be run through the model
-* description: irrelevant for most videos, does not add value descriptions it appears to promote channel and sponsors
+* description: irrelevant for most videos, does not add value descriptions it appears to promote their channel and sponsors
 
 To address duplicates within the dataset after checking all records there are no duplicates within the dataset, except for empty descriptions. After removing descriptions from the dataset duplicates will no longer be an issue. 
 

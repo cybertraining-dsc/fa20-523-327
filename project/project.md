@@ -99,9 +99,13 @@ Python reads the trending_date and publish_time labels as objects which needs to
 
 ![Figure 1](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png)
 
+**Figure 1:** Converting into Dates
+
 Next the remaining three labels can be easily converted from their boolean values into 1/0 values.
 
 ![Figure 2](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure2.png)
+
+**Figure 2:** Converting boolean variables into 1 or 0 
 
 ## 5. Model
 
@@ -111,17 +115,21 @@ To begin model creation the 80/20, Train/Test Ratio, will be used to create the 
 
 ![Figure 3](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure3.png)
 
+**Figure 3:** Pearson's Correlation Graph
+
 When looking at the model it is clear there is high correlation between likes, dislikes, category_id, and comment_count. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell just short of .9. 
 
 After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .95. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actualy values. Several discrepencies shown in the image are an over prediction early within the model and near the end. Although there are over predictions it still closely follows actual values. 
 
 ![Figure 4](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png)
 
+**Figure 4:** Predicted vs Actual Values Graph
+
 ## 6. Additional Findings
 
 When diving deeper into the dataset there are clear preferences for videos under certain categories. 
 
-Count of videos by Category            |  Count of Top 10 Categories
+**Figure 5:** Count of videos in each Category            |  **Figure 1:** Top 10 Categories
 :-------------------------:|:-------------------------:
 ![Figure 5](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure5.png)  | ![Figure 6](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure6.png)
 
@@ -164,15 +172,17 @@ The performance measures for this program were done through Cloudmesh StopWatch 
 
 ![Figure 7](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure7.png)
 
+**Figure 7:** Benchmarks
+
 When inspecting the results for the tests, Model 1 took 15 seconds to complete while the final model took 24 seconds. Model 1 contained 4 labels while the final model had 13. By increasing the amount of labels there are in the model there is a 62.5% increase in time for execution. 
 
 ## 8. Conclusion
 
-The results indicate engagement from viewers is vital for a video to trend on Youtube. For a video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Many Youtube channels adapated to this model producing videos consistenly reaching the trending section. By engaging viewer interaction and producing generally accepting content a Youtuber can increase the likelihood their video will reach the trending section.
+The results indicate engagement from viewers is vital for a video to trend on Youtube. For a video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Many Youtube channels adapated to this model producing videos consistenly reaching the trending section. By engaging viewer interaction and producing generally accepting content a Youtuber can increase the likelihood their video will reach the trending section. 
 
 ## 8.1 Limitations
 
-Although this current work brings substantinal analysis and understanding to this topic the model could be improved in several ways. First, the dataset being used is missing various fields that can impact the likelihood if a video will trend such as the number of subscribers a channel has, the amount of people that see the video but do not click on the video, and does that channel promote ads on Youtube for viewers to checkout the channel. The number of subscribers is available to scrape but the other two fields are senesitive information not accessible to the public. It can be important to have this information because Youtube can prioritize channels uploading content under categories they want to surface or if they pay Youtube to surface their channel. As stated earlier the dataset being used is a couple years old and the way Youtube promotes videos could have changed within the time frame. Another limiting factor is the dataset being used only contains videos uploaded within the US meaning it does not account for videos uploaded worldwide. Youtube can prioritize certain content through select regions or Youtube promotes the same content throughout the world.     
+Although this current work brings substantinal analysis and understanding to this topic the model could be improved in several ways. First, the dataset being used is missing various fields that can impact the likelihood if a video will trend such as the number of subscribers a channel has, the amount of people that see the video but do not click on the video, and does that channel promote ads on Youtube for viewers to checkout the channel. The number of subscribers is available to scrape but the other two fields are senesitive information not accessible to the public. It can be important to have this information because Youtube can prioritize channels uploading content under categories they want to surface or if they pay Youtube to surface their channel. As stated earlier the dataset being used is a couple years old and the way Youtube promotes videos could have changed within the time frame. Another limiting factor is the dataset being used only contains videos uploaded within the US meaning it does not account for videos uploaded worldwide. Youtube can prioritize certain content through select regions or Youtube promotes the same content throughout the world. The final limitation of this report was not being able to score Youtube video titles and thumbnails. Within Youtube's criteria for popular videos that appear as clickbait will not trend on Youtube. This entails titles and/or thumbnails must have ratings Youtube scores so it does not allow clickbait to surface. These are various limitations this report faces, however; once this class is over these will be addressed.      
 
 ## 9. Acknowledgments 
 

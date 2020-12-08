@@ -170,29 +170,33 @@ When inspecting the results for the tests, Model 1 took 15 seconds to complete w
 
 The results indicate engagement from viewers is vital for a video to trend on Youtube. For a video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Many Youtube channels adapated to this model producing videos consistenly reaching the trending section. By engaging viewer interaction and producing generally accepting content a Youtuber can increase the likelihood their video will reach the trending section.
 
+## 8.1 Limitations
+
+Although this current work brings substantinal analysis and understanding to this topic the model could be improved in several ways. First, the dataset being used is missing various fields that can impact the likelihood if a video will trend such as the number of subscribers a channel has, the amount of people that see the video but do not click on the video, and does that channel promote ads on Youtube for viewers to checkout the channel. It can be important to have this information because Youtube can prioritize channels uploading content under categories they want to surface.  
+
 ## 9. Acknowledgments 
 
 Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and the associate instructors in the *FA20-BL-ENGR-E534-11530: Big Data Applications* course (offered in the Fall 2020 semester at Indiana University, Bloomington) for their continued assistance and suggestions with regard to exploring this idea and also for their aid with preparing the various drafts of this article.
 
 ## 10. References
 
-[^1]: Google Staff, Trending on Youtube, Google. <https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.>
+[^1]: Google Staff, Trending on Youtube, Google. <https://support.google.com/youtube/answer/7239739?hl=en#:~:text=Trending%20helps%20viewers%20see%20what's,surprising%2C%20like%20a%20viral%20video.> [Accessed Oct 15, 2020]
 
-[^2]: Jolly. Mitchell, Trending YouTube Video Statistics, Kaggle. <https://www.kaggle.com/datasnaek/youtube-new>
+[^2]: Jolly. Mitchell, Trending YouTube Video Statistics, Kaggle. <https://www.kaggle.com/datasnaek/youtube-new> [Accessed Oct 15, 2020]
 
-[^3]: Li. Yuping, Eng. Kent, Zhang. Liqian, YouTube Videos Prediction: Will this video be popular?, Stanford <http://cs229.stanford.edu/proj2019aut/data/assignment_308832_raw/26647615.pdf>
+[^3]: Li. Yuping, Eng. Kent, Zhang. Liqian, YouTube Videos Prediction: Will this video be popular?, Stanford <http://cs229.stanford.edu/proj2019aut/data/assignment_308832_raw/26647615.pdf> [Accessed Oct 20, 2020]
 
 [^4]: Chai, Adam <https://github.com/cybertraining-dsc/fa20-523-327/blob/main/project/youtubeanalysis.ipynb>
 
-[^5]: Pradeep, Gulipalli, The Pareto Principle for Data Scientist, KDnuggets. <https://www.kdnuggets.com/2019/03/pareto-principle-data-scientists.html>
+[^5]: Pradeep, Gulipalli, The Pareto Principle for Data Scientist, KDnuggets. <https://www.kdnuggets.com/2019/03/pareto-principle-data-scientists.html> [Accessed Dec 5, 2020]
 
-[^6]: Statistics How Staff, Explained Variance Variation, StatisticsHowTo. <https://www.statisticshowto.com/explained-variance-variation/>
+[^6]: Statistics How Staff, Explained Variance Variation, StatisticsHowTo. <https://www.statisticshowto.com/explained-variance-variation/> [Accessed Dec 5, 2020]
 
-[^7]: Statsitcs How Staff, Correlation Coefficient Formula, StatsticsHowTo. <https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/>
+[^7]: Statsitcs How Staff, Correlation Coefficient Formula, StatsticsHowTo. <https://www.statisticshowto.com/probability-and-statistics/correlation-coefficient-formula/> [Accessed Dec 6, 2020]
 
 [^8]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <https://github.com/cloudmesh/cloudmesh-common>
 
-[^9]: Prathap, Dinesh. Youtube api video category list, Github. <https://gist.github.com/dgp/1b24bf2961521bd75d6c>
+[^9]: Prathap, Dinesh. Youtube api video category list, Github. <https://gist.github.com/dgp/1b24bf2961521bd75d6c> [Accessed Dec 7, 2020]
 
 
 

@@ -24,7 +24,9 @@ Contents
 
 ## 1. Introduction
 
-This report will be focused on trending Youtube videos. Specifically, it will be using a trending Youtube videos dataset (US only) and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience who will find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, and the Google Staff has hinted what will make a video trend,
+Youtube has two billion monthly active users making it the second-largest social network behind Facebook [^10]. This statistic only accounts for users that login into their Google account while they watch a Youtube video. Hinting, there can be hundreds of millions of more people watching Youtube. Youtube's primary feature during release was to allow anyone to upload videos so the world can watch it. This function has changed drastically throughout the years and turned Youtube into the epicenter for anything to upload a video. Businesses, schools, and even governments are fully invested into Youtube to help promote their content for their respective benefits. Youtube is changing the world by exposing their users to content they would have never experience in person.
+
+This report will investigate trending Youtube videos. Specifically, the report will be using a trending Youtube videos dataset (US only) and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience who will find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, and the Google Staff has hinted what will make a video trend,
 
 * Are appealing to a wide range of viewers
 
@@ -36,15 +38,15 @@ This report will be focused on trending Youtube videos. Specifically, it will be
 
 * Ideally, are surprising or novel
 
-but these criterion Youtube has set are not well defined[^1]. Meaning, the determinants for how a Youtube video will trend will not be given out and it is up for Youtubers to interpret what exactly will allow a video to trend. Youtubers are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos appealing to a wide audience is difficult. It takes enormous creativity and dedication for a random person to enjoy a video found online. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.
+but these criterion Youtube has set are not well defined[^1]. Meaning, the determinants and weights for how a Youtube video will trend will not be explicitly stated and it is up for Youtubers to interpret what exactly will allow their video to trend. In fact, Youtubers have argued the loose standard Youtube created is not true at all. Youtubers are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos appealing to a wide audience is difficult. It takes enormous creativity and dedication for a random person to enjoy a video found online. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate an entertaining video.
 
 ## 2. Background Research and Previous Work
 
-After reviewing other background literature and works from other authors within this field,  people have ventured into how a video will be popular on Youtube. Most findings online are analysis or unique findings for popular videos. Several people have researched to predict if a video will be popular (views) on Youtube but do not cover the scope if it will reach the trending section on Youtube. Other analysis includes likes/dislikes predictor, comment creator, title scorer, and many more. These findings can still be helpful and lead this research in the right direction.
+After reviewing other background literature and works from other authors within this field, many people have ventured into how a video will be popular on Youtube. Most findings online consits of analysis or unique findings for popular videos. Several people have researched to predict if a video will be popular (views) on Youtube but do not cover the scope if it will reach the trending section on Youtube. Other analysis includes likes/dislikes predictor, comment creator, title scorer, and many more. A couple of these findings can still be helpful and lead this research in the right direction.
 
 ## 3. Choice of Data-set
 
-To understand what determines if a video will trend on Youtube the dataset chosen for this project is a trending Youtube videos dataset (US)[^2]. The dataset was retrieved from the popular data science website, Kaggle. The dataset chosen is one of the most popular datasets available on Kaggle and many people have analyzed it. The dataset is known for being readable and having a high usability score.
+To understand what determines if a video will trend on Youtube the dataset chosen for this project is a trending Youtube videos dataset (US)[^2]. Meaning all videos within the dataset are uploaded from the US and reached the trending section on Youtube. The dataset was retrieved from the popular data science website, Kaggle. The dataset chosen is one of the most popular datasets available on Kaggle and many people have analyzed it. The dataset is known for being readable and having a high usability score.
 
 The Trending Youtube dataset contains 40,949 entries and 16 labels covering the basic information of a trending Youtube video. 
 
@@ -61,7 +63,7 @@ The Trending Youtube dataset contains 40,949 entries and 16 labels covering the 
 | likes| the number of likes a video has|
 | dislikes| the number of dislikes a video has|
 | comment_count| the amount of comments commented|
-| thumbnail_link| link to thumbnail|
+| thumbnail_link| link to thumbnail picture|
 | comments_disabled| boolean variable for allowing comments|
 | ratings_disabled| boolean variable for allowing ratings (likes, dislikes)|
 | video_error_or_removed| boolean variable if a video is still available|
@@ -75,12 +77,12 @@ All work done on this project was completed through Google Colab. Once the datas
 
 To begin there are several labels which can be taken out of the model as they do not appear relevant or cannot be run through the model:
 
-* video_id: unique identifier for each video not necessary to use
-* title: cannot be translated into a numerical value
-* channel_title: cannot be translated into a numerical value
-* tags: many tags appear irrelevant to the actual video therefore this will be taken out
+* video_id: this label is unique identifier for each video not necessary to use
+* title: could not be translated into a numerical value
+* channel_title: could not be translated into a numerical value
+* tags: many tags appear to be irrelevant to the actual video therefore this will be taken out
 * thumbnail_link: cannot be run through the model
-* description: irrelevant for most videos, does not add value descriptions it appears to promote channel and sponsors
+* description: irrelevant for most videos, does not add value descriptions it appears to promote their channel and sponsors
 
 To address duplicates within the dataset after checking all records there are no duplicates within the dataset, except for empty descriptions. After removing descriptions from the dataset duplicates will no longer be an issue. 
 
@@ -128,7 +130,7 @@ After going through combinations of labels, when the models had every label it p
 
 ## 6. Additional Findings
 
-When diving deeper into the dataset there are clear preferences for videos under certain categories. Entertainment, Music, and Howto & Style categories dominate the trend for categories. This can be an indicator for Youtube's preferance of the type of content they want to mainstream on the website.
+Looking back at Youtube's trending section dividing the dataset into category ids is necessary to discover what content Youtube defines as widely appealing. Figures below show the count of videos in each category and the top 10 categories.
 
 **Figure 5:** Count of videos in each Category     |  **Figure 1:** Top 10 Categories
 :-------------------------:|:-------------------------:
@@ -151,6 +153,12 @@ Category ID List
 
 The full list of category IDs can be found [HERE](https://gist.github.com/dgp/1b24bf2961521bd75d6c) [^9]
 
+When diving deeper into the dataset there are clear preferences for videos under certain categories. Entertainment, Music, and Howto & Style categories dominate the trend for categories. This can be an indicator for Youtube's preferance of the type of content they want to mainstream on the website.
+
+Figures 8-10
+
+The figures shown are the first three results of a video within their category. Taking a look at the title and comparing them to their category several videos appear to not really fit within their category. It can be interpreted the videos within the entertainment and howto & style categories do not have clear guidelines. However, the music category explictily only has videos based on music specifically most videos under music are music videos from popular artists.   
+
 Many channels can consistently reach the trending section on a weekly basis. It appears Youtube tries to diversify and promote unique channels on the trending section.
 
 | Channel Title | Number of trended videos |
@@ -165,6 +173,8 @@ Many channels can consistently reach the trending section on a weekly basis. It 
 | Late Night with Seth Meyers| 183  |
 | Screen Junkies| 182  |
 | NBA| 181  |
+
+
 
 ## 7. Benchmarks
 
@@ -207,3 +217,5 @@ Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and th
 [^8]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <https://github.com/cloudmesh/cloudmesh-common>
 
 [^9]: Prathap, Dinesh. Youtube api video category list, Github. <https://gist.github.com/dgp/1b24bf2961521bd75d6c> [Accessed Dec 7, 2020]
+
+[^10]: Moshin, Maryam. 10 Youtube Statistics, Oberlo <https://www.oberlo.com/blog/youtube-statistics#:~:text=YouTube%20has%202%20billion%20users,users%20than%20YouTube%20is%20Facebook.>

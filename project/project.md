@@ -63,7 +63,7 @@ The Trending Youtube dataset contains 40,949 entries and 16 labels covering the 
 | likes| the number of likes a video has|
 | dislikes| the number of dislikes a video has|
 | comment_count| the amount of comments commented|
-| thumbnail_link| link to thumbnail|
+| thumbnail_link| link to thumbnail picture|
 | comments_disabled| boolean variable for allowing comments|
 | ratings_disabled| boolean variable for allowing ratings (likes, dislikes)|
 | video_error_or_removed| boolean variable if a video is still available|
@@ -130,7 +130,7 @@ After going through combinations of labels, when the models had every label it p
 
 ## 6. Additional Findings
 
-When diving deeper into the dataset there are clear preferences for videos under certain categories. Entertainment, Music, and Howto & Style categories dominate the trend for categories. This can be an indicator for Youtube's preferance of the type of content they want to mainstream on the website.
+Looking back at Youtube's trending section dividing the dataset into category ids is necessary to discover what content Youtube defines as widely appealing. Figures below show the count of videos in each category and the top 10 categories.
 
 **Figure 5:** Count of videos in each Category     |  **Figure 1:** Top 10 Categories
 :-------------------------:|:-------------------------:
@@ -153,6 +153,8 @@ Category ID List
 
 The full list of category IDs can be found [HERE](https://gist.github.com/dgp/1b24bf2961521bd75d6c) [^9]
 
+When diving deeper into the dataset there are clear preferences for videos under certain categories. Entertainment, Music, and Howto & Style categories dominate the trend for categories. This can be an indicator for Youtube's preferance of the type of content they want to mainstream on the website.
+
 Many channels can consistently reach the trending section on a weekly basis. It appears Youtube tries to diversify and promote unique channels on the trending section.
 
 | Channel Title | Number of trended videos |
@@ -167,6 +169,8 @@ Many channels can consistently reach the trending section on a weekly basis. It 
 | Late Night with Seth Meyers| 183  |
 | Screen Junkies| 182  |
 | NBA| 181  |
+
+
 
 ## 7. Benchmarks
 

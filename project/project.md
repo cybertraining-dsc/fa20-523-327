@@ -155,6 +155,10 @@ The full list of category IDs can be found [HERE](https://gist.github.com/dgp/1b
 
 When diving deeper into the dataset there are clear preferences for videos under certain categories. Entertainment, Music, and Howto & Style categories dominate the trend for categories. This can be an indicator for Youtube's preferance of the type of content they want to mainstream on the website.
 
+Figures 8-10
+
+The figures shown are the first three results of a video within their category. Taking a look at the title and comparing them to their category several videos appear to not really fit within their category. It can be interpreted the videos within the entertainment and howto & style categories do not have clear guidelines. However, the music category explictily only has videos based on music specifically most videos under music are music videos from popular artists.   
+
 Many channels can consistently reach the trending section on a weekly basis. It appears Youtube tries to diversify and promote unique channels on the trending section.
 
 | Channel Title | Number of trended videos |

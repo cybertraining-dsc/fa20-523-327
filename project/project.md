@@ -128,7 +128,7 @@ After going through combinations of labels, when the models had every label it p
 
 **Figure 4:** Predicted vs. Actual Values Graph
 
-## 6. Additional Findings
+## 6. Insights
 
 Looking back at Youtube's trending section dividing the dataset into category ids is necessary to discover what content Youtube defines as widely appealing. Figures below show the count of videos in each category and the top 10 categories.
 
@@ -157,7 +157,7 @@ When diving deeper into the dataset there are clear preferences for videos under
 
 Figures 8-10
 
-The figures shown are the first three results of a video within their category. Taking a look at the title and comparing them to their category several videos appear to not really fit within their category. It can be interpreted the videos within the entertainment and howto & style categories do not have clear guidelines. However, the music category explictily only has videos based on music specifically most videos under music are music videos from popular artists.   
+The figures shown are the first three results of a video within their category. Taking a look at the title and comparing them to their category description several videos appear to not really fit within their category. The guidelines for the entertainment and howto & style categories do not have a set criteria. However, the music category explictily shows videos based on music most videos under music are music videos from popular artists.   
 
 Many channels can consistently reach the trending section on a weekly basis. It appears Youtube tries to diversify and promote unique channels on the trending section.
 

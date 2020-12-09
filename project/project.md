@@ -176,8 +176,6 @@ Many channels can consistently reach the trending section on a weekly basis. It 
 | Screen Junkies| 182  |
 | NBA| 181  |
 
-
-
 ## 7. Benchmarks
 
 The performance measures for this program were done through Cloudmesh StopWatch and Benchmark[^8]. The instances where benchmark was measured include loading the dataset, data preparation, timing each model, and the overall code execution.

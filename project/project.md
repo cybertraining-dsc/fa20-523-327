@@ -132,7 +132,7 @@ After going through combinations of labels, when the models had every label it p
 
 Looking back at Youtube's trending section dividing the dataset into category ids is necessary to discover what content Youtube defines as widely appealing. Figures below show the count of videos in each category and the top 10 categories.
 
-**Figure 5:** Count of videos in each Category     |  **Figure 1:** Top 10 Categories
+**Figure 5:** Count of videos in each Category     |  **Figure 6:** Top 10 Categories
 :-------------------------:|:-------------------------:
 ![Figure 5](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure5.png)  | ![Figure 6](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure6.png)
 
@@ -155,9 +155,11 @@ The full list of category IDs can be found [HERE](https://gist.github.com/dgp/1b
 
 When diving deeper into the dataset there are clear preferences for videos under certain categories. Entertainment, Music, and Howto & Style categories dominate the trend for categories. This can be an indicator for Youtube's preferance of the type of content they want to mainstream on the website.
 
-Figures 8-10
+**Figure 8:** Entertainment Videos    |  **Figure 9:** Music Videos     |  **Figure 10:** Howto & Style Videos
+:-------------------------:|:-------------------------: |:-------------------------:
+![Figure 8](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure8.png)  | ![Figure 9](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure9.png) | ![Figure 10](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure10.png)
 
-The figures shown are the first three results of a video within their category. Taking a look at the title and comparing them to their category description several videos appear to not really fit within their category. The guidelines for the entertainment and howto & style categories do not have a set criteria. However, the music category explictily shows videos based on music most videos under music are music videos from popular artists.   
+The figures shown are the first three results of a video within their category. Taking a look at the title and comparing them to their category description several videos appear to not really fit within their category. The guidelines for the entertainment and howto & style categories do not have a set criteria. However, the music category explictily shows videos based on music most videos under music are music videos from popular artists.
 
 Many channels can consistently reach the trending section on a weekly basis. It appears Youtube tries to diversify and promote unique channels on the trending section.
 

@@ -159,7 +159,7 @@ When diving deeper into the dataset there are clear preferences for videos under
 :------------------------:|:-------------------------:
 | **Figure 9:** Music Videos  | ![Figure 9](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure8.png)|
 :------------------------:|:-------------------------:
-**Figure 10:** Howto & Style Videos! | ![Figure 10](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure10.png)|
+| **Figure 10:** Howto & Style Videos! | ![Figure 10](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure10.png)|
 
 The figures shown are the first three results of a video within their category. Taking a look at the title and comparing them to their category description several videos appear to not really fit within their category. The guidelines for the entertainment and howto & style categories do not have a set criteria. However, the music category explictily shows videos based on music most videos under music are music videos from popular artists.
 

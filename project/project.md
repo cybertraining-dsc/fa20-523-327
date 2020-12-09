@@ -24,7 +24,9 @@ Contents
 
 ## 1. Introduction
 
-This report will be focused on trending Youtube videos. Specifically, it will be using a trending Youtube videos dataset (US only) and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience who will find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, and the Google Staff has hinted what will make a video trend,
+Youtube has two billion monthly active users making it the second-largest social network behind Facebook [^10]. This statistic only accounts for users that login into their Google account while they watch a Youtube video. Hinting, there can be hundreds of millions of more people watching Youtube. Youtube's primary feature during release was to allow anyone to upload videos so the world can watch it. This function has changed drastically throughout the years and turned Youtube into the epicenter for anything to upload a video. Businesses, schools, and even governments are fully invested into Youtube to help promote their content for their respective benefits. Youtube is changing the world by exposing their users to content they would have never experience in person.        
+
+This report will investigate trending Youtube videos. Specifically, the report will be using a trending Youtube videos dataset (US only) and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience who will find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, and the Google Staff has hinted what will make a video trend,
 
 * Are appealing to a wide range of viewers
 
@@ -36,11 +38,11 @@ This report will be focused on trending Youtube videos. Specifically, it will be
 
 * Ideally, are surprising or novel
 
-but these criterion Youtube has set are not well defined[^1]. Meaning, the determinants for how a Youtube video will trend will not be given out and it is up for Youtubers to interpret what exactly will allow a video to trend. Youtubers are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos appealing to a wide audience is difficult. It takes enormous creativity and dedication for a random person to enjoy a video found online. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate a good video.
+but these criterion Youtube has set are not well defined[^1]. Meaning, the determinants and weights for how a Youtube video will trend will not be explicitly stated and it is up for Youtubers to interpret what exactly will allow their video to trend. In fact, Youtubers have argued the loose standard Youtube created is not true at all. Youtubers are constantly attempting to crack this code, evolving and purposely tailoring their videos in hopes it will go viral. Creating Youtube videos appealing to a wide audience is difficult. It takes enormous creativity and dedication for a random person to enjoy a video found online. Most people on Youtube have specific interests and follow certain industries, however; anyone can appreciate an entertaining video.
 
 ## 2. Background Research and Previous Work
 
-After reviewing other background literature and works from other authors within this field,  people have ventured into how a video will be popular on Youtube. Most findings online are analysis or unique findings for popular videos. Several people have researched to predict if a video will be popular (views) on Youtube but do not cover the scope if it will reach the trending section on Youtube. Other analysis includes likes/dislikes predictor, comment creator, title scorer, and many more. A couple of these findings can still be helpful and lead this research in the right direction.
+After reviewing other background literature and works from other authors within this field, many people have ventured into how a video will be popular on Youtube. Most findings online consits of analysis or unique findings for popular videos. Several people have researched to predict if a video will be popular (views) on Youtube but do not cover the scope if it will reach the trending section on Youtube. Other analysis includes likes/dislikes predictor, comment creator, title scorer, and many more. A couple of these findings can still be helpful and lead this research in the right direction.
 
 ## 3. Choice of Data-set
 
@@ -207,3 +209,5 @@ Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and th
 [^8]: Gregor von Laszewski, Cloudmesh StopWatch and Benchmark from the Cloudmesh Common Library, <https://github.com/cloudmesh/cloudmesh-common>
 
 [^9]: Prathap, Dinesh. Youtube api video category list, Github. <https://gist.github.com/dgp/1b24bf2961521bd75d6c> [Accessed Dec 7, 2020]
+
+[^10]: Moshin, Maryam. 10 Youtube Statistics, Oberlo <https://www.oberlo.com/blog/youtube-statistics#:~:text=YouTube%20has%202%20billion%20users,users%20than%20YouTube%20is%20Facebook.>

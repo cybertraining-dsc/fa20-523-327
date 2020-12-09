@@ -48,7 +48,7 @@ After reviewing other background literature and works from other authors within 
 
 To understand what determines if a video will trend on Youtube the dataset chosen for this project is a trending Youtube videos dataset (US)[^2]. Meaning all videos within the dataset are uploaded from the US and reached the trending section on Youtube. The dataset was retrieved from the popular data science website, Kaggle. The dataset chosen is one of the most popular datasets available on Kaggle and many people have analyzed it. The dataset is known for being readable and having a high usability score.
 
-The Trending Youtube dataset contains 40,949 entries and 16 labels covering the basic information of a trending Youtube video. 
+The Trending Youtube dataset contains 40,949 entries and 16 labels covering the basic information of a trending Youtube video.
 
 | Label      | Description |
 | ----------- | ----------- |
@@ -71,9 +71,9 @@ The Trending Youtube dataset contains 40,949 entries and 16 labels covering the 
 
 A combination of these labels will be used in creating a model to discover how a video will trend on Youtube. The drawbacks of using this dataset are various labels are not covered such as the number of subscribers a channel has or the likelihood of someone that sees the video will click on it and older data is being used (all videos were uploaded and trended between 2017 and 2018).
 
-## 4.Data Preprocessing 
+## 4.Data Preprocessing
 
-All work done on this project was completed through Google Colab. Once the dataset is imported from Kaggle onto Google Colab data preprocessing is necessary to translate the raw data into a readable format. Pandas and Datetime are used for data preprocessing. 
+All work done on this project was completed through Google Colab. Once the dataset is imported from Kaggle onto Google Colab data preprocessing is necessary to translate the raw data into a readable format. Pandas and Datetime are used for data preprocessing.
 
 To begin there are several labels which can be taken out of the model as they do not appear relevant or cannot be run through the model:
 
@@ -84,7 +84,7 @@ To begin there are several labels which can be taken out of the model as they do
 * thumbnail_link: cannot be run through the model
 * description: irrelevant for most videos, does not add value descriptions it appears to promote their channel and sponsors
 
-To address duplicates within the dataset after checking all records there are no duplicates within the dataset, except for empty descriptions. After removing descriptions from the dataset duplicates will no longer be an issue. 
+To address duplicates within the dataset after checking all records there are no duplicates within the dataset, except for empty descriptions. After removing descriptions from the dataset duplicates will no longer be an issue.
 
 Several labels need to be converted into an integer so they can be run through the model:
 
@@ -98,31 +98,31 @@ Several labels need to be converted into an integer so they can be run through t
 
 * video_error_or_removed
 
-Pandas reads the trending_date and publish_time labels as objects which need to be changed to integer values. To convert date columns the data type first needs to be converted into datetime. After conversion, another datetime function will be used to separate the month, day, and year into their individual columns. 
+Pandas reads the trending_date and publish_time labels as objects which need to be changed to integer values. To convert date columns the data type first needs to be converted into datetime. After conversion, another datetime function will be used to separate the month, day, and year into their individual columns.
 
 ![Figure 1](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png)
 
 **Figure 1:** Converting into Dates
 
-Next, the remaining three labels can be easily converted from their boolean values into 1 or 0 values. 
+Next, the remaining three labels can be easily converted from their boolean values into 1 or 0 values.
 
 ![Figure 2](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure2.png)
 
-**Figure 2:** Converting boolean variables into 1 or 0 
+**Figure 2:** Converting boolean variables into 1 or 0
 
 ## 5. Model
 
 The model built for this project will be using Scikit-learn Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with a tree-like structure since there is an unlimited number of layers, the decision tree can achieve high accuracy and cause an overfitting problem. Random Forest will randomly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [^3].
 
-To begin model creation the 80/20, Train/Test Ratio will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[^5]. To determine the accuracy of the model an explained variance score will be applied to determine accuracy. Explained variance is the measure of discrepancy between a model and actual data [^6]. The best possible score is 1.0 meaning there is a stronger strength of association. When creating the model it is important to check if there are highly correlated predictors in the model or else the possibility of multicollinearity can occur. To find highly correlated variables Pearson's correlation coefficient can be used. Correlation coefficients are used to measure how strong a relationship is between two variables [^7]. A value of one indicates a strong positive relationship whereas a negative one indicates a strong negative relationship. 
+To begin model creation the 80/20, Train/Test Ratio will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[^5]. To determine the accuracy of the model an explained variance score will be applied to determine accuracy. Explained variance is the measure of discrepancy between a model and actual data [^6]. The best possible score is 1.0 meaning there is a stronger strength of association. When creating the model it is important to check if there are highly correlated predictors in the model or else the possibility of multicollinearity can occur. To find highly correlated variables Pearson's correlation coefficient can be used. Correlation coefficients are used to measure how strong a relationship is between two variables [^7]. A value of one indicates a strong positive relationship whereas a negative one indicates a strong negative relationship.
 
 ![Figure 3](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure3.png)
 
 **Figure 3:** Pearson's Correlation Graph
 
-When looking at the model it is clear there is a high correlation between likes, dislikes, category_id, and comment_count. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell scores around .9. 
+When looking at the model it is clear there is a high correlation between likes, dislikes, category_id, and comment_count. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell scores around .9.
 
-After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .96. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actual values. Several discrepancies shown in the image are an over-prediction early within the model and near the end. Although there are over predictions it still closely follows actual values. 
+After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .96. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actual values. Several discrepancies shown in the image are an over-prediction early within the model and near the end. Although there are over predictions it still closely follows actual values.
 
 ![Figure 4](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png)
 
@@ -157,7 +157,7 @@ When diving deeper into the dataset there are clear preferences for videos under
 
 **Figure 8:** Entertainment Videos    |  **Figure 9:** Music Videos     |  **Figure 10:** Howto & Style Videos
 :-------------------------:|:-------------------------: |:-------------------------:
-![Figure 8](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure8.png)  | ![Figure 9](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure9.png) | ![Figure 10](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure10.png)
+![Figure 8](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure8.png)  | ![Figure 9](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure9.png) | ![Figure 10](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure10.png) |
 
 The figures shown are the first three results of a video within their category. Taking a look at the title and comparing them to their category description several videos appear to not really fit within their category. The guidelines for the entertainment and howto & style categories do not have a set criteria. However, the music category explictily shows videos based on music most videos under music are music videos from popular artists.
 
@@ -186,11 +186,11 @@ The performance measures for this program were done through Cloudmesh StopWatch 
 
 **Figure 7:** Benchmarks
 
-When inspecting the results for the tests, Model 1 took 15 seconds to complete while the final model took 24 seconds. Model 1 contained 4 labels while the final model had 13. By increasing the number of labels there are in the model there is a 62.5% increase in time for execution. 
+When inspecting the results for the tests, Model 1 took 15 seconds to complete while the final model took 24 seconds. Model 1 contained 4 labels while the final model had 13. By increasing the number of labels there are in the model there is a 62.5% increase in time for execution.
 
 ## 8. Conclusion
 
-The results indicate engagement from viewers is vital for a video to trend on Youtube. For a video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Many Youtube channels adapted to this model producing videos consistently reaching the trending section. By engaging viewer interaction and producing generally accepting content a Youtuber can increase the likelihood their video will reach the trending section. 
+The results indicate engagement from viewers is vital for a video to trend on Youtube. For a video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Many Youtube channels adapted to this model producing videos consistently reaching the trending section. By engaging viewer interaction and producing generally accepting content a Youtuber can increase the likelihood their video will reach the trending section.
 
 ## 8.1 Limitations
 
@@ -220,4 +220,4 @@ Adam Chai would like to thank Dr. Gregor Von Laszewski, Dr. Geoffrey Fox, and th
 
 [^9]: Prathap, Dinesh. Youtube api video category list, Github. <https://gist.github.com/dgp/1b24bf2961521bd75d6c> [Accessed Dec 7, 2020]
 
-[^10]: Moshin, Maryam. 10 Youtube Statistics, Oberlo <https://www.oberlo.com/blog/youtube-statistics#:~:text=YouTube%20has%202%20billion%20users,users%20than%20YouTube%20is%20Facebook.>
+[^10]: Moshin, Maryam. 10 Youtube Statistics, Oberlo <https://www.oberlo.com/blog/youtube-statistics#:~:text=YouTube%20has%202%20billion%20users,users%20than%20YouTube%20is%20Facebook.>[Accessed Dec 7, 2020]

@@ -110,7 +110,7 @@ Next, the comments disabled, ratings disbaled, and video error or removed can be
 
 **Figure 2:** Converting boolean variables into 1 or 0
 
-## 5. Model
+## 5. Model Creation and Methodology
 
 There are various ways this model can be built but this project follows the documentation on Scikit-learn. After researching sucessful methods the model built for this project will be using Scikit-learn Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with a tree-like structure since there is an unlimited number of layers, the decision tree can achieve high accuracy and cause an overfitting problem. Random Forest will randomly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [^3].
 

@@ -19,12 +19,12 @@ Contents
 
 {{% /pageinfo %}}
 
-**Keywords:** youtube, videos, trending, popular, big data, viral, content creation, entertainment
+**Keywords:** youtube, videos, trending, popular, big data, viral, content creation, entertainment, lifestyle
 
 
 ## 1. Introduction
 
-Youtube has two billion monthly active users making it the second-largest social network behind Facebook [^10]. This statistic only accounts for users that login into their Google account while they watch a Youtube video. Hinting, there can be hundreds of millions of more people watching Youtube. Youtube's primary feature during release was to allow anyone to upload videos so the world can watch it. This function has changed drastically throughout the years and turned Youtube into the epicenter for anything to upload a video. Businesses, schools, and even governments are fully invested into Youtube to help promote their content for their respective benefits. Youtube is changing the world by exposing their users to content they would have never experience in person.
+Youtube has two billion monthly active users making it the second-largest social network behind Facebook [^10]. This statistic only accounts for users that login into their Google account while they watch a Youtube video. Hinting, there can be hundreds of millions of more people watching Youtube. Youtube's primary feature during release was to allow anyone to upload videos so the world can watch it. This function has changed drastically throughout the years and turned Youtube into the epicenter for anything to upload a video. Businesses, schools, and even governments are fully invested into Youtube to help promote their content for their respective benefits. Today, being a Youtuber is a respected profession giving anyone the opportunity to showcase their talent of content production. Youtube is changing the world by exposing their users to content they would have never experience in person.
 
 This report will investigate trending Youtube videos. Specifically, the report will be using a trending Youtube videos dataset (US only) and will be used to predict if a video will trend on Youtube. Trending videos on Youtube are aimed to surface videos to a wide range of audience who will find interesting. There are a lot of hypothesis people created to understand the Youtube algorithm, and the Google Staff has hinted what will make a video trend,
 
@@ -120,7 +120,7 @@ To begin model creation the 80/20, Train/Test Ratio will be used to create the m
 
 **Figure 3:** Pearson's Correlation Graph
 
-When looking at the model it is clear there is a high correlation between likes, dislikes, category_id, and comment_count. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell scores around .9.
+When looking at the model it is clear there is a high correlation between likes, dislikes, category_id, and comment_count. Other highly correlated variables to each other include comments_disabled and ratings_disabled, and dates. What this means is videos that disable comments are also likely to disable ratings. The correlation between dates can infer how quickly popular videos will likely trend on Youtube. Assuming the rest of the labels were not necessary or are not optimal the first decision tree and random forest model created consists of the labels likes, dislikes, and comment_count. After scoring the explained variance score the model fell scores around .9.
 
 After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .96. This is a good result and could mean the models created are very accurate. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actual values. Several discrepancies shown in the image are an over-prediction early within the model and near the end. Although there are over predictions it still closely follows actual values.
 

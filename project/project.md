@@ -180,6 +180,8 @@ An important task to understand how Youtube picks videos to trend on Youtube is 
 
 Many channels can consistently reach the trending section on a weekly basis. In fact, there were 2207 unique channels within the dataset that trended on Youtube. The number of unique channels trending on shows Youtube tries to diversify and promote unique channels on the trending section.
 
+Other insights discovered are the average ratio between likes to dislikes for a trending Youtube video is 20:1. This means for every dislike there are twenty likes. A ratio this skewed is important to consider for a popular video because it is hard to reach this ratio.  Additionally, the average views for a trending video is about 2.3 million views. A combination of weights of these two statistics can contribute if a video will reach the trending section.
+
 ## 7. Benchmarks
 
 The performance measures for this program were done through Cloudmesh StopWatch and Benchmark[^8]. The instances where benchmark was measured include loading the dataset, data preparation, timing each model, and the overall code execution. To clarify the performance measures for the program will time how fast sections of code are ran through the system.

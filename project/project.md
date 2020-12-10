@@ -98,7 +98,7 @@ Several labels need to be converted into an integer so they can be run through t
 
 * video_error_or_removed
 
-Pandas reads the trending_date and publish_time labels as objects which need to be changed to integer values. To convert date columns the data type first needs to be converted into datetime. After conversion, another datetime function will be used to separate the month, day, and year into their individual columns.
+Pandas reads the trending_date and publish_time labels as objects which need to be changed to integer values. To convert date columns the data type first needs to be converted into datetime. After conversion, another datetime function will be used to separate the month, day, and year into their columns.
 
 ![Figure 1](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png)
 
@@ -178,7 +178,7 @@ An important task to understand how Youtube picks videos to trend on Youtube is 
 | Screen Junkies| 182  |
 | NBA| 181  |
 
-Many channels can consistently reach the trending section on a weekly basis. In fact, there were 2207 unique channels within the dataset that trended on Youtube. The number of unique channels trending on shows Youtube tries to diversify and promote unique channels on the trending section.
+Many channels can consistently reach the trending section on a weekly basis. There were 2207 unique channels within the dataset that trended on Youtube. The number of unique channels trending on shows Youtube tries to diversify and promote unique channels on the trending section.
 
 Other insights discovered are the average ratio between likes to dislikes for a trending Youtube video is 20:1. This means for every dislike there are twenty likes. A ratio this skewed is important to consider for a popular video because it is hard to reach this ratio.  Additionally, the average views for a trending video are about 2.3 million views while the average number of comments for a video is 8.4 thousand. A combination of weights of these three statistics can contribute if a video will reach the trending section.
 

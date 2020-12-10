@@ -42,7 +42,7 @@ but these criterion Youtube has set are not well defined[^1]. Meaning, the deter
 
 ## 2. Background Research and Previous Work
 
-After reviewing other background literature and works from other authors within this field, many people have ventured into how a video will be popular on Youtube. Most findings online consits of analysis or unique findings for popular videos. Several people have researched to predict if a video will be popular (views) on Youtube but do not cover the scope if it will reach the trending section on Youtube. Other analysis includes likes/dislikes predictor, comment creator, title scorer, and many more. A couple of these findings can still be helpful and lead this research in the right direction.
+After reviewing other background literature and works from other authors within this field, many people have ventured into how a video will be popular on Youtube. Most findings online consits of analysis or unique findings for popular videos. Several people have researched to predict if a video will be popular (views) on Youtube but do not cover the scope if it will reach the trending section on Youtube. Other analysis includes likes/dislikes predictor, comment creator, title scorer, and many more. Additionally, there has been analysis done on topics that are similar to Youtube which can be applied in this instance. A combination of these findings can be helpful and lead this research in the right direction.
 
 ## 3. Choice of Data-set
 
@@ -112,7 +112,7 @@ Next, the remaining three labels can be easily converted from their boolean valu
 
 ## 5. Model
 
-The model built for this project will be using Scikit-learn Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with a tree-like structure since there is an unlimited number of layers, the decision tree can achieve high accuracy and cause an overfitting problem. Random Forest will randomly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [^3].
+There are various ways this model can be built but this project follows the example documentation on Scikit-learn. After researching sucessful methods the model built for this project will be using Scikit-learn Decision Tree and Random Forest. Decision Tree can be used as a multiple regression with a tree-like structure since there is an unlimited number of layers, the decision tree can achieve high accuracy and cause an overfitting problem. Random Forest will randomly select samples and features to train different trees and averages the score of different trees therefore reducing overfitting [^3].
 
 To begin model creation the 80/20, Train/Test Ratio will be used to create the model. In computing, the Pareto Principle is a safe and common approach for model creation[^5]. To determine the accuracy of the model an explained variance score will be applied to determine accuracy. Explained variance is the measure of discrepancy between a model and actual data [^6]. The best possible score is 1.0 meaning there is a stronger strength of association. When creating the model it is important to check if there are highly correlated predictors in the model or else the possibility of multicollinearity can occur. To find highly correlated variables Pearson's correlation coefficient can be used. Correlation coefficients are used to measure how strong a relationship is between two variables [^7]. A value of one indicates a strong positive relationship whereas a negative one indicates a strong negative relationship.
 
@@ -163,7 +163,7 @@ When diving deeper into the dataset there are clear preferences for videos under
 
 The figures shown are the first three results of a video within their category. Taking a look at the title and comparing them to their category description several videos appear to not really fit within their category. The guidelines for the entertainment and howto & style categories do not have a set criteria. However, the music category explictily shows videos based on music most videos under music are music videos from popular artists.
 
-Many channels can consistently reach the trending section on a weekly basis. It appears Youtube tries to diversify and promote unique channels on the trending section.
+An important task to understand how Youtube picks videos to trend on Youtube is to discover how many channels have trended on Youtube.
 
 | Channel Title | Number of trended videos |
 | ----------- | ----------- |
@@ -178,19 +178,21 @@ Many channels can consistently reach the trending section on a weekly basis. It 
 | Screen Junkies| 182  |
 | NBA| 181  |
 
+Many channels can consistently reach the trending section on a weekly basis. In fact, there were 2207 unique channels within the dataset that trended on Youtube. The number of unique channels trending on shows Youtube tries to diversify and promote unique channels on the trending section.
+
 ## 7. Benchmarks
 
-The performance measures for this program were done through Cloudmesh StopWatch and Benchmark[^8]. The instances where benchmark was measured include loading the dataset, data preparation, timing each model, and the overall code execution.
+The performance measures for this program were done through Cloudmesh StopWatch and Benchmark[^8]. The instances where benchmark was measured include loading the dataset, data preparation, timing each model, and the overall code execution. To clarify the performance measures for the program will time how fast sections of code are ran through the system.
 
 ![Figure 7](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure7.png)
 
 **Figure 7:** Benchmarks
 
-When inspecting the results for the tests, Model 1 took 15 seconds to complete while the final model took 24 seconds. Model 1 contained 4 labels while the final model had 13. By increasing the number of labels there are in the model there is a 62.5% increase in time for execution.
+When inspecting the results for the tests, Model 1 took 15 seconds to complete while the final model took 24 seconds. Model 1 contained 4 labels while the final model had 13. By increasing the number of labels there are in the model there is a 62.5% increase in time for execution. The overral code execution took 50 seconds to run which shows the models are RAM intensive meaning it takes a lot of time for the calculations to execute.
 
 ## 8. Conclusion
 
-The results indicate engagement from viewers is vital for a video to trend on Youtube. For any video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Several categories such as entertainment and howto & style are some of the most popular categories on Youtube allowing most videos to upload through these categories. Many Youtube channels once they reach the trending section are able to stay consitent allowing other their other videos a higher chance of trending. Many Youtube channels adapted to this model producing video content in a similar manner to help reach the trending section. This brings up a flaw within the model of the Youtube trending section. Youtubers are continously producing content which had success within the past contradicting an important aspect of the trending section stating videos are, "Ideally, are surprising or novel." Various sucessful channels like ESPN, The Tonight Show, or Netflix are producing videos that are unique but individually very similar to each other. If a Youtuber is seeking consistent views, producing unique videos until one is sucessful will help other videos if the content is similar to the sucessful one. Ultimately, engaging viewer interaction and producing generally accepting content a Youtuber can increase the likelihood their video will reach the trending section.
+The results indicate engagement from viewers is vital for a video to trend on Youtube. For any video to trend viewers need to like and comment allowing more people to become aware of a video. Videos featuring obscure or illicit content, ie. drugs, guns, nudity, etc., cannot reach the trending section on Youtube because it cannot appeal to a wide range of audiences. Youtube promotes and encourages content any viewer can watch. Several categories such as entertainment and howto & style are some of the most popular categories on Youtube allowing most videos to upload through these categories. Many Youtube channels once they reach the trending section are able to stay consitent allowing other their other videos a higher chance of trending. Many Youtube channels adapted to this model producing video content in a similar manner to help reach the trending section. This brings up a flaw within the model of the Youtube trending section. Youtubers are continously producing content which had success within the past contradicting an important aspect of the trending section stating videos are, "Ideally, are surprising or novel." Various sucessful channels like ESPN, The Tonight Show, or Netflix are producing videos that are unique but individually very similar to each other. If a Youtuber is seeking consistent views, producing unique videos until one is sucessful will help other videos if the content is similar to the sucessful one. Ultimately, engaging viewer interaction and producing generally accepting content a Youtuber can increase the likelihood their video will reach the trending section.
 
 ## 8.1 Limitations
 

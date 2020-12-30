@@ -124,7 +124,7 @@ When looking at the model it is clear there is a high correlation between likes,
 
 After going through combinations of labels, when the models had every label it produced the highest explained variance score of around .96. This score is a good result and could mean the models created are very accurate. The reason for a higher explained variance score can be the dates are important if a video will trend. For the visualization, Figure 4 illustrates the relationship between predicted and actual values for views. When examining the image the predicted values are nearly overlapping the actual values. It is very hard to tell any differences. Several discrepancies shown in the image are an over-prediction early within the model and near the end. Although there are over predictions it still closely follows actual values.
 
-![Figure 4](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure1.png)
+![Figure 4](https://github.com/cybertraining-dsc/fa20-523-327/raw/main/project/images/figure4.png)
 
 **Figure 4:** Predicted vs. Actual Values Graph
 

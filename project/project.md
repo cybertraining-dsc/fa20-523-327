@@ -1,4 +1,14 @@
-# Trending Youtube Videos Analysis
+---
+date: 2021-03-15
+title: Trending Youtube Videos Analysis
+linkTitle: Videos Analysis
+tags: ["project", "ai", "lifestyle"]
+description: How can a Youtuber create a unique identity allowing their videos to go viral? This report will address this issue by creating a prediction of how Youtube popularizes a video and a solution to help a video go viral.
+author: Adam Chai
+resources:
+- src: "**.{png,jpg}"
+  title: "Image #:counter"
+---
 
 [![Check Report](https://github.com/cybertraining-dsc/fa20-523-327/workflows/Check%20Report/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-327/actions)
 [![Status](https://github.com/cybertraining-dsc/fa20-523-327/workflows/Status/badge.svg)](https://github.com/cybertraining-dsc/fa20-523-327/actions)

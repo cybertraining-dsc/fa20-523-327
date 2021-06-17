@@ -5,6 +5,7 @@ linkTitle: Videos Analysis
 tags: ["project", "ai", "lifestyle"]
 description: "The internet has created a revolution for how people connect, understand topics, and consume information. Today, the consumption of the media is easier than ever. Going onto the internet and finding interesting content takes less than a minute to do. In the already growing industry of amateur or professional video production, Youtube is one of many go-to platforms for viewers and creators to collide. Social media creates an avenue for Youtubers to help promote their videos and reach a wider audience. For hours on end, viewers can watch nearly any type of content uploaded onto the site. However, it is harder for video creators to make an interesting video any person can enjoy than a viewer to find one of those videos. In the congested mass of videos, how can a Youtuber create a unique identity allowing their videos to go viral? This report will address this issue by creating a prediction of how Youtube popularizes a video and a solution to help a video go viral."
 author: Adam Chai
+github_url: https://github.com/cybertraining-dsc/fa20-523-327/edit/main/project/project.md
 resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
